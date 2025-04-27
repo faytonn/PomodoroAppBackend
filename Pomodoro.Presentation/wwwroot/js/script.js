@@ -628,7 +628,7 @@ export function initTodo()
   {
     const text = inp.value.trim();
     if (!text) return;
-    
+
     const category = qs('task-category').value;
     const priority = qs('task-priority').value;
     const hasDueDateChecked = qs('has-due-date').checked;

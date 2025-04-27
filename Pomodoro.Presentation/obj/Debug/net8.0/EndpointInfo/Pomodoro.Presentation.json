@@ -746,10 +746,6 @@
       "CreatePomodoroTaskDto": {
         "type": "object",
         "properties": {
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "title": {
             "type": "string",
             "nullable": true

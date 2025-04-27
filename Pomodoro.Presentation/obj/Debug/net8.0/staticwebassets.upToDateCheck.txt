@@ -1,6 +1,7 @@
 wwwroot\css\styles.css
 wwwroot\index.html
 wwwroot\jest.config.js
+wwwroot\js\api.js
 wwwroot\js\router.js
 wwwroot\js\script.js
 wwwroot\js\theme.js

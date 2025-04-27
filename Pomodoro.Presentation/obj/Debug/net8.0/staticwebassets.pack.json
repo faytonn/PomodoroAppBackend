@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\jest.config.js"
     },
     {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\api.js",
+      "PackagePath": "staticwebassets\\js\\api.js"
+    },
+    {
       "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\router.js",
       "PackagePath": "staticwebassets\\js\\router.js"
     },

@@ -36,15 +36,21 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<PomodoroTaskDto?> GetByIdAsync(int id)
         {
-            var session = await _pomodoroTaskRepository.GetAsync(id);
-            return session == null ? null : _mapper.Map<PomodoroTaskDto>(session);
+            var task = await _pomodoroTaskRepository.GetAsync(id);
+            return task == null ? null : _mapper.Map<PomodoroTaskDto>(task);
         }
 
-        public async Task<bool> CreateAsync(CreatePomodoroTaskDto dto)
+        public async Task<PomodoroTaskDto?> CreateAsync(CreatePomodoroTaskDto dto, int userId)
         {
             var task = _mapper.Map<PomodoroTask>(dto);
+            task.UserId = userId;
             await _pomodoroTaskRepository.CreateAsync(task);
-            return await _pomodoroTaskRepository.SaveChangesAsync() > 0;
+            var saved = await _pomodoroTaskRepository.SaveChangesAsync() > 0;
+            
+            if (!saved)
+                return null;
+        
+            return _mapper.Map<PomodoroTaskDto>(task);
         }
 
         public async Task<bool> UpdateAsync(UpdatePomodoroTaskDto dto)

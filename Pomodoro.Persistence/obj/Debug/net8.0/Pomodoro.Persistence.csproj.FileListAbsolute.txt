@@ -1,9 +1,3 @@
-C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.csproj.AssemblyReference.cache
-C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.AssemblyInfoInputs.cache
-C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.AssemblyInfo.cs
-C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.csproj.CoreCompileInputs.cache
-C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.sourcelink.json
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\bin\Debug\net8.0\Pomodoro.Persistence.deps.json
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\bin\Debug\net8.0\Pomodoro.Persistence.runtimeconfig.json
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\bin\Debug\net8.0\Pomodoro.Persistence.dll
@@ -12,6 +6,12 @@ C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\bin\Debu
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\bin\Debug\net8.0\Pomodoro.Domain.dll
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\bin\Debug\net8.0\Pomodoro.Application.pdb
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\bin\Debug\net8.0\Pomodoro.Domain.pdb
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.csproj.AssemblyReference.cache
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.AssemblyInfoInputs.cache
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.AssemblyInfo.cs
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.sourcelink.json
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.45A2EBFB.Up2Date
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\Pomodoro.Persistence.dll
 C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Persistence\obj\Debug\net8.0\refint\Pomodoro.Persistence.dll

@@ -41,11 +41,12 @@ namespace Pomodoro.Presentation.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var created = await _pomodoroTaskService.CreateAsync(dto);
-            if (!created)
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            var createdTask = await _pomodoroTaskService.CreateAsync(dto, userId);
+            if (createdTask == null)
                 return BadRequest("Could not create task.");
 
-            return Ok();
+            return Ok(createdTask);
         }
 
         [HttpPut("{id}")]

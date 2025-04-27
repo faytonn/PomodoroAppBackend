@@ -54,6 +54,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\jest.config.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\api.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pomodoro.Presentation</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pomodoro.Presentation</BasePath>
+      <RelativePath>js/api.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6hozpw53vh</Fingerprint>
+      <Integrity>VlAYFJAH1daYq3H0qzbiO4ZW6J/fMPQ66dKcb1HOeYI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\api.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\router.js'))">
       <SourceType>Package</SourceType>
       <SourceId>Pomodoro.Presentation</SourceId>
@@ -84,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1vaoce3elu</Fingerprint>
-      <Integrity>/YD7Z7063eZcpSSqNapJbU8WybvnQbEL2TF7QbVOWWg=</Integrity>
+      <Fingerprint>guwgxwj0md</Fingerprint>
+      <Integrity>uIQJ6NEidc6bjDuJQeM8Lf6kaTwBr1sF9v4TBJQ5keg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script.js'))</OriginalItemSpec>
