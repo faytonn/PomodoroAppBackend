@@ -1,0 +1,12 @@
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\bin\Debug\net8.0\Pomodoro.Domain.deps.json
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\bin\Debug\net8.0\Pomodoro.Domain.dll
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\bin\Debug\net8.0\Pomodoro.Domain.pdb
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\Pomodoro.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\Pomodoro.Domain.AssemblyInfoInputs.cache
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\Pomodoro.Domain.AssemblyInfo.cs
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\Pomodoro.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\Pomodoro.Domain.sourcelink.json
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\Pomodoro.Domain.dll
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\refint\Pomodoro.Domain.dll
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\Pomodoro.Domain.pdb
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Domain\obj\Debug\net8.0\ref\Pomodoro.Domain.dll

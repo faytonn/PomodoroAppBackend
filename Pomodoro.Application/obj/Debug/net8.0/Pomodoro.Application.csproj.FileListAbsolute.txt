@@ -1,0 +1,6 @@
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Application\obj\Debug\net8.0\Pomodoro.Application.csproj.AssemblyReference.cache
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Application\obj\Debug\net8.0\Pomodoro.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Application\obj\Debug\net8.0\Pomodoro.Application.AssemblyInfoInputs.cache
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Application\obj\Debug\net8.0\Pomodoro.Application.AssemblyInfo.cs
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Application\obj\Debug\net8.0\Pomodoro.Application.csproj.CoreCompileInputs.cache
+C:\Users\Fatima\source\repos\Pomodoro.Presentation\Pomodoro.Application\obj\Debug\net8.0\Pomodoro.Application.sourcelink.json
