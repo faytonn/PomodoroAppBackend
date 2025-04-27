@@ -1,6 +1,8 @@
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Pomodoro.Application.DTOs;
 using Pomodoro.Application.DTOs.PomdoroTaskDTO;
+using Pomodoro.Application.DTOs.PomodoroSession;
 using Pomodoro.Application.Interfaces.Repositories;
 using Pomodoro.Application.Interfaces.Services;
 using Pomodoro.Domain.Entities;
@@ -24,10 +26,18 @@ namespace Pomodoro.Persistence.Services
             return _mapper.Map<List<PomodoroTaskDto>>(tasks);
         }
 
+        public async Task<List<PomodoroTaskDto>> GetByUserIdAsync(int userId)
+        {
+            var tasks = await _pomodoroTaskRepository.GetAll()
+                .Where(t => t.UserId == userId)
+                .ToListAsync();
+            return _mapper.Map<List<PomodoroTaskDto>>(tasks);
+        }
+
         public async Task<PomodoroTaskDto?> GetByIdAsync(int id)
         {
-            var task = await _pomodoroTaskRepository.GetAsync(id);
-            return task == null ? null : _mapper.Map<PomodoroTaskDto>(task);
+            var session = await _pomodoroTaskRepository.GetAsync(id);
+            return session == null ? null : _mapper.Map<PomodoroTaskDto>(session);
         }
 
         public async Task<bool> CreateAsync(CreatePomodoroTaskDto dto)
@@ -55,5 +65,7 @@ namespace Pomodoro.Persistence.Services
             _pomodoroTaskRepository.Delete(task);
             return await _pomodoroTaskRepository.SaveChangesAsync() > 0;
         }
+
+        
     }
 } 

@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\jest.config.js",
+      "PackagePath": "staticwebassets\\jest.config.js"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\router.js",
+      "PackagePath": "staticwebassets\\js\\router.js"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\theme.js",
+      "PackagePath": "staticwebassets\\js\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package-lock.json",
+      "PackagePath": "staticwebassets\\package-lock.json"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package.json",
+      "PackagePath": "staticwebassets\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\partials\\pomodoro.html",
+      "PackagePath": "staticwebassets\\partials\\pomodoro.html"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\sounds\\celebration.wav",
+      "PackagePath": "staticwebassets\\sounds\\celebration.wav"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\sounds\\rain.wav",
+      "PackagePath": "staticwebassets\\sounds\\rain.wav"
+    },
+    {
+      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\test\\index.test.js",
+      "PackagePath": "staticwebassets\\test\\index.test.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pomodoro.Presentation.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pomodoro.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pomodoro.Presentation.props",
+      "PackagePath": "build\\Pomodoro.Presentation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pomodoro.Presentation.props",
+      "PackagePath": "buildMultiTargeting\\Pomodoro.Presentation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pomodoro.Presentation.props",
+      "PackagePath": "buildTransitive\\Pomodoro.Presentation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

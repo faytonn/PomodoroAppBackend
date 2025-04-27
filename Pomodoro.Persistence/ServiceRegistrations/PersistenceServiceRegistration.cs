@@ -22,6 +22,20 @@ namespace Pomodoro.Persistence.ServiceRegistrations
             services.AddScoped<IPomodoroTaskRepository, PomodoroTaskRepository>();
             services.AddScoped<IPomodoroTaskService, PomodoroTaskService>();
 
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
+
+            services.AddScoped<IPomodoroSessionRepository, PomodoroSessionRepository>();
+            services.AddScoped<IPomodoroSessionService, PomodoroSessionService>();
+
+            services.AddScoped<IFocusSessionRepository, FocusSessionRepository>();
+            services.AddScoped<IFocusSessionService, FocusSessionService>();
+
+            services.AddScoped<IBlockedSiteRepository, BlockedSiteRepository>();
+            services.AddScoped<IBlockedSiteService, BlockedSiteService>();
+
+            services.AddScoped<IStatisticsRepository, StatisticsRepository>();
+            services.AddScoped<IStatisticsService, StatisticsService>();
 
             return services;
         }

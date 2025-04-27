@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pomodoro.Application.DTOs.PomdoroTaskDTO;
 using Pomodoro.Application.Interfaces.Services;
+using System.Security.Claims;
 
 namespace Pomodoro.Presentation.Controllers
 {
@@ -15,11 +17,13 @@ namespace Pomodoro.Presentation.Controllers
             _pomodoroTaskService = pomodoroTaskService;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var tasks = await _pomodoroTaskService.GetAllAsync();
-            return Ok(tasks);
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            var items = await _pomodoroTaskService.GetByUserIdAsync(userId);
+            return Ok(items);
         }
 
         [HttpGet("{id}")]

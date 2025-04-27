@@ -131,8 +131,7 @@ qs('logout-btn').onclick = () => {
   location.reload();
 };
 
-// — PANEL INITIALIZERS —
-// 1) Pomodoro
+
 export function initPomodoro() 
 {
   const root = qs('root');
