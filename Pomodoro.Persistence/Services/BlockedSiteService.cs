@@ -26,7 +26,7 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<BlockedSiteDto?> GetByIdAsync(int id)
         {
-            var site = await _repo.GetAsync(id);
+            var site = await _repo.GetByIdAsync(id);
             return site == null ? null : _mapper.Map<BlockedSiteDto>(site);
         }
 
@@ -39,7 +39,7 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<bool> DeleteAsync(int id)
         {
-            var site = await _repo.GetAsync(id);
+            var site = await _repo.GetByIdAsync(id);
             if (site == null) return false;
 
             _repo.Delete(site);

@@ -55,75 +55,85 @@ qs('show-login').onclick = e => {
   qs('login-username').focus();
 };
 
-qs('register-btn').onclick = () => {
-  const u = qs('reg-username').value.trim();
-  const p = qs('reg-password').value;
-  const c = qs('reg-confirm').value;
-  
-  qs('reg-error').textContent = '';
-  
-  if (!u || !p) {
-    qs('reg-error').textContent = 'Please fill in all fields';
-    return;
-  }
-  
-  if (p.length < 6) {
-    qs('reg-error').textContent = 'Password must be at least 6 characters';
-    return;
-  }
-  
-  if (p !== c) {
-    qs('reg-error').textContent = 'Passwords do not match';
-    return;
-  }
-  
-  if (users.some(x => x.user === u)) {
-    qs('reg-error').textContent = 'Username already exists';
-    return;
-  }
-  
-  users.push({user: u, pass: p});
-  localStorage.setItem('users', JSON.stringify(users));
-  
-  qs('reg-username').value = '';
-  qs('reg-password').value = '';
-  qs('reg-confirm').value = '';
-  
-  alert('Registration successful! Please log in.');
-  loginS.classList.remove('hidden');
-  regS.classList.add('hidden');
+qs('register-btn').onclick = async () => {
+    const username = qs('reg-username').value.trim();
+    const email = qs('reg-email').value.trim();
+    const password = qs('reg-password').value;
+    const confirmPassword = qs('reg-confirm').value;
+    
+    qs('reg-error').textContent = '';
+    
+    if (!username || !email || !password || !confirmPassword) {
+        qs('reg-error').textContent = 'Please fill in all fields';
+        return;
+    }
+    
+    if (password.length < 6) {
+        qs('reg-error').textContent = 'Password must be at least 6 characters';
+        return;
+    }
+    
+    if (password !== confirmPassword) {
+        qs('reg-error').textContent = 'Passwords do not match';
+        return;
+    }
+    
+    try {
+        await auth.register({
+            username,
+            email,
+            password,
+            confirmPassword
+        });
+        
+        qs('reg-username').value = '';
+        qs('reg-email').value = '';
+        qs('reg-password').value = '';
+        qs('reg-confirm').value = '';
+        
+        alert('Registration successful! Please log in.');
+        loginS.classList.remove('hidden');
+        regS.classList.add('hidden');
+    } catch (error) {
+        qs('reg-error').textContent = error.message;
+    }
 };
 
-qs('login-btn').onclick = () => {
-  const u = qs('login-username').value.trim();
-  const p = qs('login-password').value;
-  
-  qs('login-error').textContent = '';
-  
-  if (!u || !p) {
-    qs('login-error').textContent = 'Please fill in all fields';
-    return;
-  }
-  
-  const user = users.find(x => x.user === u && x.pass === p);
-  
-  if (!user) {
-    qs('login-error').textContent = 'Invalid username or password';
-    return;
-  }
-  
-  currentUser = u;
-  localStorage.setItem('currentUser', u);
-  
-  qs('login-username').value = '';
-  qs('login-password').value = '';
-  
-  authC.classList.add('hidden');
-  appC.classList.remove('hidden');
-  qs('username-display').textContent = currentUser;
-  
-  initHeader();
-  initPomodoro();
+qs('login-btn').onclick = async () => {
+    const loginId = qs('login-username').value.trim();
+    const password = qs('login-password').value;
+    
+    qs('login-error').textContent = '';
+    
+    if (!loginId || !password) {
+        qs('login-error').textContent = 'Please fill in all fields';
+        return;
+    }
+    
+    try {
+        await auth.login({
+            loginId,
+            password
+        });
+        
+        currentUser = loginId;
+        localStorage.setItem('currentUser', currentUser);
+        
+        authC.classList.add('hidden');
+        appC.classList.remove('hidden');
+        qs('username-display').textContent = currentUser;
+        
+        // Initialize the app
+        initHeader();
+        initPomodoro();
+        initTodo();
+        initStats();
+        initAbout();
+        initSettings();
+        initFocusMode();
+    } catch (error) {
+        qs('login-error').textContent = error.message;
+    }
 };
 
 qs('logout-btn').onclick = () => {
@@ -499,7 +509,31 @@ export function initTodo()
         hasDueDate = qs('has-due-date'),
         dueDateInput = qs('task-due-date');
 
-  let tasks = JSON.parse(localStorage.getItem(`tasks_${currentUser}`) || '[]');
+  let tasks = [];
+  
+  // Load tasks from API on mount
+  (async () => {
+    try {
+      const { tasks: api } = await import('./api.js');
+      const apiTasks = await api.getAll();
+      tasks = apiTasks.map(task => ({
+        id: task.id,
+        text: task.title,
+        description: task.description,
+        category: task.category,
+        priority: task.priority,
+        dueDate: task.dueDate,
+        reminder: task.reminder,
+        completed: task.progress === 100,
+        createdAt: task.createdAt
+      }));
+      render();
+    } catch (error) {
+      console.error('Failed to load initial tasks:', error);
+      tasks = JSON.parse(localStorage.getItem(`tasks_${currentUser}`) || '[]');
+      render();
+    }
+  })();
 
   hasDueDate.addEventListener('change', () => 
   {
@@ -519,10 +553,27 @@ export function initTodo()
     }
   });
 
-  function saveRender() 
-  {
+  async function saveRender() {
     localStorage.setItem(`tasks_${currentUser}`, JSON.stringify(tasks));
-    render();
+    try {
+      const { tasks: api } = await import('./api.js');
+      const apiTasks = await api.getAll();
+      tasks = apiTasks.map(task => ({
+        id: task.id,
+        text: task.title,
+        description: task.description,
+        category: task.category,
+        priority: task.priority,
+        dueDate: task.dueDate,
+        reminder: task.reminder,
+        completed: task.progress === 100,
+        createdAt: task.createdAt
+      }));
+      render();
+    } catch (error) {
+      console.error('Failed to load tasks:', error);
+      render();
+    }
   }
 
   function render() 
@@ -551,10 +602,21 @@ export function initTodo()
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
       checkbox.checked = task.completed;
-      checkbox.onchange = () => 
-      {
-        tasks[i].completed = !tasks[i].completed;
-        saveRender();
+      checkbox.onchange = async () => {
+        try {
+          const { tasks: api } = await import('./api.js');
+          await api.update(task.id, {
+            ...task,
+            title: task.text,
+            progress: !task.completed ? 100 : 0
+          });
+          tasks[i].completed = !tasks[i].completed;
+          saveRender();
+        } catch (error) {
+          console.error('Failed to update task:', error);
+          alert('Failed to update task. Please try again.');
+          checkbox.checked = task.completed; // Revert the checkbox
+        }
       };
 
       const taskContent = document.createElement('div');
@@ -598,10 +660,16 @@ export function initTodo()
       const deleteBtn = document.createElement('button');
       deleteBtn.className = 'delete-task';
       deleteBtn.innerHTML = '✕';
-      deleteBtn.onclick = () => 
-      {
-        tasks.splice(i, 1);
-        saveRender();
+      deleteBtn.onclick = async () => {
+        try {
+          const { tasks: api } = await import('./api.js');
+          await api.delete(task.id);
+          tasks.splice(i, 1);
+          saveRender();
+        } catch (error) {
+          console.error('Failed to delete task:', error);
+          alert('Failed to delete task. Please try again.');
+        }
       };
 
       li.appendChild(checkbox);
@@ -624,8 +692,7 @@ export function initTodo()
     return '';
   }
 
-  add.onclick = () => 
-  {
+  add.onclick = async () => {
     const text = inp.value.trim();
     if (!text) return;
 
@@ -636,25 +703,39 @@ export function initTodo()
     const reminder = qs('task-reminder').value;
     const customReminderDate = reminder === 'custom' ? qs('custom-reminder').value : null;
     
-    tasks.push({
-      text,
+    const task = {
+      title: text,
+      description: '',
       category,
       priority,
       dueDate,
       reminder: reminder === 'custom' ? customReminderDate : reminder,
-      completed: false,
-      createdAt: new Date().toISOString()
-    });
-    
-    inp.value = '';
-    qs('has-due-date').checked = false;
-    qs('task-due-date').value = '';
-    qs('task-due-date').classList.add('hidden');
-    qs('task-reminder').value = 'none';
-    qs('custom-reminder').value = '';
-    qs('custom-reminder').classList.add('hidden');
-    
-    saveRender();
+      progress: 0
+    };
+
+    try {
+      const { tasks: api } = await import('./api.js');
+      const savedTask = await api.create(task);
+      tasks.push({
+        ...task,
+        id: savedTask.id,
+        completed: false,
+        createdAt: new Date().toISOString()
+      });
+      
+      inp.value = '';
+      qs('has-due-date').checked = false;
+      qs('task-due-date').value = '';
+      qs('task-due-date').classList.add('hidden');
+      qs('task-reminder').value = 'none';
+      qs('custom-reminder').value = '';
+      qs('custom-reminder').classList.add('hidden');
+      
+      saveRender();
+    } catch (error) {
+      console.error('Failed to save task:', error);
+      alert('Failed to save task. Please try again.');
+    }
   };
 
   inp.onkeypress = e => 

@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Pomodoro.Presentation",
-    "version": "1.0"
+    "title": "Pomodoro API",
+    "version": "v1"
   },
   "paths": {
     "/api/Auth/register": {
@@ -527,22 +527,131 @@
         }
       }
     },
-    "/api/Statistics/{userId}": {
+    "/api/Statistics": {
       "get": {
         "tags": [
           "Statistics"
         ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Statistics"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateStatisticsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateStatisticsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateStatisticsDto"
+              }
             }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Statistics"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatisticsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatisticsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatisticsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/email": {
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEmailDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEmailDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEmailDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/password": {
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePasswordDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePasswordDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePasswordDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -569,17 +678,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserDto"
+                "$ref": "#/components/schemas/RegisterDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserDto"
+                "$ref": "#/components/schemas/RegisterDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserDto"
+                "$ref": "#/components/schemas/RegisterDto"
               }
             }
           }
@@ -674,6 +783,47 @@
           }
         }
       }
+    },
+    "/api/UserSettings": {
+      "get": {
+        "tags": [
+          "UserSettings"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UserSettings"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserSettingsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserSettingsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserSettingsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -750,10 +900,6 @@
             "type": "string",
             "nullable": true
           },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
           "category": {
             "type": "string",
             "nullable": true
@@ -772,30 +918,43 @@
         },
         "additionalProperties": false
       },
-      "CreateUserDto": {
+      "CreateStatisticsDto": {
         "type": "object",
         "properties": {
-          "username": {
-            "type": "string",
-            "nullable": true
+          "totalFocusTime": {
+            "type": "integer",
+            "format": "int32"
           },
-          "email": {
-            "type": "string",
-            "nullable": true
+          "sessionsCompleted": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "goalsAchieved": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "focusScore": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
       },
       "LoginDto": {
+        "required": [
+          "loginId",
+          "password"
+        ],
         "type": "object",
         "properties": {
           "loginId": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "password": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 6,
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -810,19 +969,32 @@
         "format": "int32"
       },
       "RegisterDto": {
+        "required": [
+          "confirmPassword",
+          "email",
+          "password",
+          "username"
+        ],
         "type": "object",
         "properties": {
           "username": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 50,
+            "minLength": 3,
+            "type": "string"
           },
           "email": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
           },
           "password": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 6,
+            "type": "string"
+          },
+          "confirmPassword": {
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -846,6 +1018,16 @@
         "type": "integer",
         "format": "int32"
       },
+      "UpdateEmailDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UpdateFocusSessionDto": {
         "type": "object",
         "properties": {
@@ -866,6 +1048,24 @@
             "format": "int32"
           },
           "goals": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePasswordDto": {
+        "type": "object",
+        "properties": {
+          "currentPassword": {
+            "type": "string",
+            "nullable": true
+          },
+          "newPassword": {
+            "type": "string",
+            "nullable": true
+          },
+          "confirmPassword": {
             "type": "string",
             "nullable": true
           }
@@ -908,10 +1108,6 @@
             "type": "string",
             "nullable": true
           },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
           "category": {
             "type": "string",
             "nullable": true
@@ -926,6 +1122,32 @@
           },
           "progress": {
             "$ref": "#/components/schemas/TaskProgress"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateStatisticsDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalFocusTime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sessionsCompleted": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "goalsAchieved": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "focusScore": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
@@ -947,7 +1169,67 @@
           }
         },
         "additionalProperties": false
+      },
+      "UpdateUserSettingsDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "accentColor": {
+            "type": "string",
+            "nullable": true
+          },
+          "fontSize": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "enableNotifications": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "enableSound": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "workDuration": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "shortBreakDuration": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "longBreakDuration": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "longBreakInterval": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+        "name": "Authorization",
+        "in": "header"
       }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

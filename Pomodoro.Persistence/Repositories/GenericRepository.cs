@@ -16,13 +16,20 @@ namespace Pomodoro.Persistence.Repositories
             _dbSet = context.Set<T>();
         }
 
-        public async Task<T?> GetAsync(int id) => await _dbSet.FindAsync(id);
+        public async Task<T?> GetByIdAsync(int id)
+        {
+            return await _dbSet.FindAsync(id);
+        }
 
-        public async Task<T?> GetAsync(Expression<Func<T, bool>> predicate) =>
-            await _dbSet.FirstOrDefaultAsync(predicate);
+        public async Task<T?> GetAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _dbSet.FirstOrDefaultAsync(predicate);
+        }
 
-        public IQueryable<T> GetAll(Expression<Func<T, bool>>? predicate = null) =>
-            predicate == null ? _dbSet : _dbSet.Where(predicate);
+        public IQueryable<T> GetAll(Expression<Func<T, bool>>? predicate = null)
+        {
+            return predicate == null ? _dbSet : _dbSet.Where(predicate);
+        }
 
         public async Task<T> CreateAsync(T entity)
         {
@@ -36,11 +43,19 @@ namespace Pomodoro.Persistence.Repositories
             return entity;
         }
 
-        public void Delete(T entity) => _dbSet.Remove(entity);
+        public void Delete(T entity)
+        {
+            _dbSet.Remove(entity);
+        }
 
-        public async Task<bool> IsExistAsync(Expression<Func<T, bool>> predicate) =>
-            await _dbSet.AnyAsync(predicate);
+        public async Task<bool> IsExistAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _dbSet.AnyAsync(predicate);
+        }
 
-        public async Task<int> SaveChangesAsync() => await _context.SaveChangesAsync();
+        public async Task<int> SaveChangesAsync()
+        {
+            return await _context.SaveChangesAsync();
+        }
     }
 } 

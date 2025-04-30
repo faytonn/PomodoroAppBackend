@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "LoginDto",
+        "Type": "Pomodoro.Application.DTOs.AuthDTO.LoginDto",
         "IsRequired": true
       }
     ],
@@ -328,15 +328,73 @@
   },
   {
     "ContainingType": "Pomodoro.Presentation.Controllers.StatisticsController",
-    "Method": "GetByUserId",
-    "RelativePath": "api/Statistics/{userId}",
+    "Method": "GetUserStatistics",
+    "RelativePath": "api/Statistics",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pomodoro.Presentation.Controllers.StatisticsController",
+    "Method": "Create",
+    "RelativePath": "api/Statistics",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.Int32",
+        "Name": "dto",
+        "Type": "Pomodoro.Application.DTOs.Statistics.CreateStatisticsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pomodoro.Presentation.Controllers.StatisticsController",
+    "Method": "Update",
+    "RelativePath": "api/Statistics",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Pomodoro.Application.DTOs.Statistics.UpdateStatisticsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pomodoro.Presentation.Controllers.UserController",
+    "Method": "UpdateEmail",
+    "RelativePath": "api/User/email",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Pomodoro.Application.DTOs.User.UpdateEmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pomodoro.Presentation.Controllers.UserController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/User/password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Pomodoro.Application.DTOs.User.UpdatePasswordDto",
         "IsRequired": true
       }
     ],
@@ -362,7 +420,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Pomodoro.Application.DTOs.User.CreateUserDto",
+        "Type": "Pomodoro.Application.DTOs.AuthDTO.RegisterDto",
         "IsRequired": true
       }
     ],
@@ -416,6 +474,32 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pomodoro.Presentation.Controllers.UserSettingsController",
+    "Method": "GetUserSettings",
+    "RelativePath": "api/UserSettings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pomodoro.Presentation.Controllers.UserSettingsController",
+    "Method": "Update",
+    "RelativePath": "api/UserSettings",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Pomodoro.Application.DTOs.UserSettings.UpdateUserSettingsDto",
         "IsRequired": true
       }
     ],

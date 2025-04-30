@@ -37,6 +37,9 @@ namespace Pomodoro.Persistence.ServiceRegistrations
             services.AddScoped<IStatisticsRepository, StatisticsRepository>();
             services.AddScoped<IStatisticsService, StatisticsService>();
 
+            services.AddScoped<IUserSettingsRepository, UserSettingsRepository>();
+            services.AddScoped<IUserSettingsService, UserSettingsService>();
+
             return services;
         }
     }

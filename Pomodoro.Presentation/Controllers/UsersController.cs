@@ -37,11 +37,11 @@ namespace Pomodoro.Presentation.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var created = await _userService.CreateAsync(dto);
-            if (!created)
+            var createdUser = await _userService.CreateAsync(dto);
+            if (createdUser == null)
                 return BadRequest("Could not create user.");
 
-            return Ok();
+            return CreatedAtAction(nameof(Get), new { id = createdUser.Id }, createdUser);
         }
 
         [HttpPut("{id}")]

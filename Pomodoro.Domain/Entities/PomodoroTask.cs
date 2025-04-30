@@ -6,7 +6,7 @@ namespace Pomodoro.Domain.Entities
     {
         public int UserId { get; set; }
         public string Title { get; set; } = null!;
-        public string? Description { get; set; }
+        //public string? Description { get; set; }
         public string? Category { get; set; }
         public TaskPriority Priority { get; set; }
         public DateTime? DueDate { get; set; }

@@ -35,6 +35,7 @@ namespace Pomodoro.Presentation.Controllers
             return Ok(task);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreatePomodoroTaskDto dto)
         {

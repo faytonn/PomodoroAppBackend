@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pxzenfhagf"},{"Name":"integrity","Value":"sha256-bVCS2PqvfUkkAHU7nSg2D48PIqSFEn3r\u002BJBTacTqCg4="},{"Name":"label","Value":"_content/Pomodoro.Presentation/jest.config.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"103"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022bVCS2PqvfUkkAHU7nSg2D48PIqSFEn3r\u002BJBTacTqCg4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Apr 2025 17:45:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Pomodoro.Presentation/js/api.6hozpw53vh.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\api.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6hozpw53vh"},{"Name":"integrity","Value":"sha256-VlAYFJAH1daYq3H0qzbiO4ZW6J/fMPQ66dKcb1HOeYI="},{"Name":"label","Value":"_content/Pomodoro.Presentation/js/api.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1355"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VlAYFJAH1daYq3H0qzbiO4ZW6J/fMPQ66dKcb1HOeYI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 22:00:47 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pomodoro.Presentation/js/api.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\api.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VlAYFJAH1daYq3H0qzbiO4ZW6J/fMPQ66dKcb1HOeYI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1355"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VlAYFJAH1daYq3H0qzbiO4ZW6J/fMPQ66dKcb1HOeYI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 22:00:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LVB/\u002Bx8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4324"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022LVB/\u002Bx8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 13:45:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pomodoro.Presentation/js/api.tgt8xqaw4l.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\api.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tgt8xqaw4l"},{"Name":"integrity","Value":"sha256-LVB/\u002Bx8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM="},{"Name":"label","Value":"_content/Pomodoro.Presentation/js/api.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4324"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022LVB/\u002Bx8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 13:45:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pomodoro.Presentation/js/router.fzlbt641dx.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\router.js'))</AssetFile>
@@ -60,17 +60,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9SaFAXMC3HGFABgA9VhZrUBw0Ql0u4tnOov/s\u002BKeLZ0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1227"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00229SaFAXMC3HGFABgA9VhZrUBw0Ql0u4tnOov/s\u002BKeLZ0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 22:05:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Pomodoro.Presentation/js/script.guwgxwj0md.js">
+    <StaticWebAssetEndpoint Include="_content/Pomodoro.Presentation/js/script.2brwn4zznm.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"guwgxwj0md"},{"Name":"integrity","Value":"sha256-uIQJ6NEidc6bjDuJQeM8Lf6kaTwBr1sF9v4TBJQ5keg="},{"Name":"label","Value":"_content/Pomodoro.Presentation/js/script.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52992"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uIQJ6NEidc6bjDuJQeM8Lf6kaTwBr1sF9v4TBJQ5keg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 22:03:33 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2brwn4zznm"},{"Name":"integrity","Value":"sha256-wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk="},{"Name":"label","Value":"_content/Pomodoro.Presentation/js/script.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"55906"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 13:45:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pomodoro.Presentation/js/script.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uIQJ6NEidc6bjDuJQeM8Lf6kaTwBr1sF9v4TBJQ5keg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52992"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uIQJ6NEidc6bjDuJQeM8Lf6kaTwBr1sF9v4TBJQ5keg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 22:03:33 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"55906"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 13:45:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pomodoro.Presentation/js/theme.h60q5jkcrh.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\theme.js'))</AssetFile>

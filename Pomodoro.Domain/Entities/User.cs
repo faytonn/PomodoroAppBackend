@@ -5,9 +5,11 @@ namespace Pomodoro.Domain.Entities
     public class User : BaseAuditableEntity
     {
         public int Id { get; set; }
-        public string Username { get; set; } = null!;
-        public string Email { get; set; } = null!;
-        public string Password { get; set; } = null!; // i will not use passwordhash for now
+        public string Username { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string PasswordHash { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
         public ICollection<PomodoroTask> PomodoroTasks { get; set; } = new List<PomodoroTask>();
         public ICollection<PomodoroSession> PomodoroSessions { get; set; } = new List<PomodoroSession>();
         public ICollection<FocusSession> FocusSessions { get; set; } = new List<FocusSession>();

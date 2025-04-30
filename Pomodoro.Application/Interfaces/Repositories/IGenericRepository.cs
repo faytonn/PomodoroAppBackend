@@ -4,7 +4,7 @@ namespace Pomodoro.Application.Interfaces.Repositories
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<T?> GetAsync(int id);
+        Task<T?> GetByIdAsync(int id);
         Task<T?> GetAsync(Expression<Func<T, bool>> predicate);
         IQueryable<T> GetAll(Expression<Func<T, bool>>? predicate = null);
         Task<T> CreateAsync(T entity);

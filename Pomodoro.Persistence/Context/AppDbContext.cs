@@ -21,12 +21,12 @@ namespace Pomodoro.Persistence.Context
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<PomodoroTask> Tasks { get; set; }
+        public DbSet<PomodoroTask> PomodoroTasks { get; set; }
         public DbSet<PomodoroSession> PomodoroSessions { get; set; }
         public DbSet<FocusSession> FocusSessions { get; set; }
         public DbSet<BlockedSite> BlockedSites { get; set; }
         public DbSet<Statistics> Statistics { get; set; }
-        public DbSet<PomodoroTask> PomodoroTasks { get; set; }
+        public DbSet<UserSettings> UserSettings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

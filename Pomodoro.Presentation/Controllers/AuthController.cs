@@ -1,11 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Pomodoro.Domain.Entities;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-using Pomodoro.Persistence.Context;
 using Pomodoro.Application.DTOs.AuthDTO;
+using Pomodoro.Application.Interfaces.Services;
+using Pomodoro.Domain.Entities;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Pomodoro.Presentation.Controllers
 {
@@ -13,63 +11,61 @@ namespace Pomodoro.Presentation.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly AppDbContext _context;
-        private readonly IConfiguration _config;
+        private readonly IUserService _userService;
 
-        public AuthController(AppDbContext context, IConfiguration config)
+        public AuthController(IUserService userService)
         {
-            _context = context;
-            _config = config;
+            _userService = userService;
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto dto)
         {
-            if (_context.Users.Any(u => u.Username == dto.Username || u.Email == dto.Email))
-                return BadRequest(new { message = "Username or email already exists" });
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (dto.Password != dto.ConfirmPassword)
+                return BadRequest("Passwords do not match");
 
             var user = new User
             {
                 Username = dto.Username,
                 Email = dto.Email,
-                Password = dto.Password,
-                
+                PasswordHash = HashPassword(dto.Password)
             };
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-            return Ok(new { message = "Registration successful" });
+
+            var createdUser = await _userService.CreateAsync(user);
+            if (createdUser == null)
+                return BadRequest("Could not create user. Email might already be taken.");
+
+            return CreatedAtAction(nameof(Login), new { email = dto.Email }, createdUser);
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginDto dto)
+        public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Username == dto.LoginId || u.Email == dto.LoginId);
-            if (user == null || user.Password != dto.Password)
-                return Unauthorized(new { message = "Invalid username/email or password" });
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            var token = GenerateJwtToken(user);
-            return Ok(new { token, username = user.Username });
+            var user = await _userService.GetUserByLoginIdAsync(dto.LoginId);
+            if (user == null)
+                return Unauthorized("Invalid login credentials");
+
+            var hashedPassword = HashPassword(dto.Password);
+            if (user.PasswordHash != hashedPassword)
+                return Unauthorized("Invalid login credentials");
+
+            // TODO: Generate JWT token here
+            return Ok(new { message = "Login successful" });
         }
 
-        private string GenerateJwtToken(User user)
+        private string HashPassword(string password)
         {
-            var claims = new[]
+            using (var sha256 = SHA256.Create())
             {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.Username)
-            };
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                _config["Jwt:Issuer"],
-                _config["Jwt:Issuer"],
-                claims,
-                expires: DateTime.Now.AddDays(7),
-                signingCredentials: creds);
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return Convert.ToBase64String(hashedBytes);
+            }
         }
     }
 }

@@ -34,7 +34,7 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<PomodoroSessionDto?> GetByIdAsync(int id)
         {
-            var session = await _repo.GetAsync(id);
+            var session = await _repo.GetByIdAsync(id);
             return session == null ? null : _mapper.Map<PomodoroSessionDto>(session);
         }
 
@@ -47,7 +47,7 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<bool> UpdateAsync(UpdatePomodoroSessionDto dto)
         {
-            var session = await _repo.GetAsync(dto.Id);
+            var session = await _repo.GetByIdAsync(dto.Id);
             if (session == null) return false;
 
             _mapper.Map(dto, session);
@@ -57,7 +57,7 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<bool> DeleteAsync(int id)
         {
-            var session = await _repo.GetAsync(id);
+            var session = await _repo.GetByIdAsync(id);
             if (session == null) return false;
 
             _repo.Delete(session);

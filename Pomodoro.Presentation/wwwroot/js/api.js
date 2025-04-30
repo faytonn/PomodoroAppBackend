@@ -88,4 +88,58 @@ export const tasks = {
             throw error;
         }
     }
+};
+
+export const auth = {
+    async register(userData) {
+        try {
+            console.log('Sending registration request:', userData);
+            const response = await fetch(`${API_BASE_URL}/auth/register`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(userData)
+            });
+
+            console.log('Registration response status:', response.status);
+            const responseData = await response.json();
+            console.log('Registration response data:', responseData);
+
+            if (!response.ok) {
+                throw new Error(responseData.message || 'Registration failed');
+            }
+
+            return responseData;
+        } catch (error) {
+            console.error('Registration error:', error);
+            throw error;
+        }
+    },
+
+    async login(loginData) {
+        try {
+            const response = await fetch(`${API_BASE_URL}/auth/login`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(loginData)
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Login failed');
+            }
+
+            const data = await response.json();
+            if (data.token) {
+                localStorage.setItem('token', data.token);
+            }
+            return data;
+        } catch (error) {
+            console.error('Error logging in:', error);
+            throw error;
+        }
+    }
 }; 

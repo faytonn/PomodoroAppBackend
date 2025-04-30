@@ -1,0 +1,11 @@
+using Pomodoro.Application.DTOs.UserSettings;
+
+namespace Pomodoro.Application.Interfaces.Services
+{
+    public interface IUserSettingsService
+    {
+        Task<UserSettingsDto?> GetByIdAsync(int id);
+        Task<UserSettingsDto?> GetByUserIdAsync(int userId);
+        Task<bool> UpdateAsync(UpdateUserSettingsDto dto);
+    }
+} 

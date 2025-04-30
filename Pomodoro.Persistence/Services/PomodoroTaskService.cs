@@ -36,7 +36,7 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<PomodoroTaskDto?> GetByIdAsync(int id)
         {
-            var task = await _pomodoroTaskRepository.GetAsync(id);
+            var task = await _pomodoroTaskRepository.GetByIdAsync(id);
             return task == null ? null : _mapper.Map<PomodoroTaskDto>(task);
         }
 
@@ -55,7 +55,7 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<bool> UpdateAsync(UpdatePomodoroTaskDto dto)
         {
-            var task = await _pomodoroTaskRepository.GetAsync(dto.Id);
+            var task = await _pomodoroTaskRepository.GetByIdAsync(dto.Id);
             if (task == null) return false;
 
             _mapper.Map(dto, task);
@@ -65,7 +65,7 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<bool> DeleteAsync(int id)
         {
-            var task = await _pomodoroTaskRepository.GetAsync(id);
+            var task = await _pomodoroTaskRepository.GetByIdAsync(id);
             if (task == null) return false;
 
             _pomodoroTaskRepository.Delete(task);
