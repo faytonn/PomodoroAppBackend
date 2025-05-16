@@ -420,7 +420,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Pomodoro.Application.DTOs.AuthDTO.RegisterDto",
+        "Type": "Pomodoro.Application.DTOs.User.CreateUserDto",
         "IsRequired": true
       }
     ],

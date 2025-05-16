@@ -1845,6 +1845,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AutoMapper": "14.0.0",
+          "Microsoft.AspNetCore.Http.Features": "2.3.0",
           "Pomodoro.Domain": "1.0.0"
         },
         "compile": {

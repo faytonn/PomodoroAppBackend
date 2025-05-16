@@ -29,6 +29,13 @@ namespace Pomodoro.Persistence.Services
             return settings == null ? null : _mapper.Map<UserSettingsDto>(settings);
         }
 
+        public async Task<bool> CreateAsync(CreateUserSettingsDto dto)
+        {
+            var settings = _mapper.Map<UserSettings>(dto);
+            await _userSettingsRepository.CreateAsync(settings);
+            return await _userSettingsRepository.SaveChangesAsync() > 0;
+        }
+
         public async Task<bool> UpdateAsync(UpdateUserSettingsDto dto)
         {
             var settings = await _userSettingsRepository.GetByIdAsync(dto.Id);
@@ -43,6 +50,7 @@ namespace Pomodoro.Persistence.Services
             if (dto.ShortBreakDuration.HasValue) settings.ShortBreakDuration = dto.ShortBreakDuration.Value;
             if (dto.LongBreakDuration.HasValue) settings.LongBreakDuration = dto.LongBreakDuration.Value;
             if (dto.LongBreakInterval.HasValue) settings.LongBreakInterval = dto.LongBreakInterval.Value;
+            if (dto.Theme != null) settings.Theme = dto.Theme;
 
             _userSettingsRepository.Update(settings);
             return await _userSettingsRepository.SaveChangesAsync() > 0;

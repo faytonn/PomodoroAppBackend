@@ -1,34 +1,57 @@
-// script.js
-// — AUTH & TAB SHELL —
+import * as api from './api.js';
+const { auth } = api;
+
+function priorityToEnum(priority) {
+  switch (priority) {
+    case 'high': return 3;
+    case 'medium': return 2;
+    case 'low': return 1;
+    default: return 1;
+  }
+}
+function enumToPriority(val) {
+  switch (val) {
+    case 3: return 'high';
+    case 2: return 'medium';
+    case 1: return 'low';
+    default: return 'low';
+  }
+}
+
+
 function qs(id)
 {
   return document.getElementById(id);
 }
-let users = JSON.parse(localStorage.getItem('users') || '[]');
-let currentUser = null;
+
 const authC = qs('auth-container'),
       loginS = qs('login-section'),
       regS = qs('register-section'),
       appC = qs('app-container');
 
 document.addEventListener('DOMContentLoaded', () => {
-  currentUser = localStorage.getItem('currentUser');
+  const currentUser = localStorage.getItem('currentUser');
   if (currentUser) {
     authC.classList.add('hidden');
     appC.classList.remove('hidden');
     qs('username-display').textContent = currentUser;
     
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    
-    const themeIcon = document.querySelector('.theme-icon');
-    if (themeIcon) {
-      themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-    }
-    
-    import('./theme.js').then(module => {
-      module.initTheme();
-    });
+    // Load settings from backend
+    api.settings.getUserSettings()
+      .then(settings => {
+        if (settings.theme) {
+          document.documentElement.setAttribute('data-theme', settings.theme);
+          const themeIcon = document.querySelector('.theme-icon');
+          if (themeIcon) {
+            themeIcon.textContent = settings.theme === 'dark' ? '☀️' : '🌙';
+          }
+        }
+      })
+      .catch(error => {
+        console.error('Failed to load settings:', error);
+        // Fallback to light theme
+        document.documentElement.setAttribute('data-theme', 'light');
+      });
     
     import('./router.js').then(module => {
     });
@@ -56,94 +79,86 @@ qs('show-login').onclick = e => {
 };
 
 qs('register-btn').onclick = async () => {
-    const username = qs('reg-username').value.trim();
-    const email = qs('reg-email').value.trim();
-    const password = qs('reg-password').value;
-    const confirmPassword = qs('reg-confirm').value;
+  const u = qs('reg-username').value.trim();
+  const e = qs('reg-email').value.trim();
+  const p = qs('reg-password').value;
+  const c = qs('reg-confirm').value;
+  
+  qs('reg-error').textContent = '';
+  
+  if (!u || !e || !p) {
+    qs('reg-error').textContent = 'Please fill in all fields';
+    return;
+  }
+  
+  if (!e.includes('@')) {
+    qs('reg-error').textContent = 'Please enter a valid email address';
+    return;
+  }
+  
+  if (p.length < 6) {
+    qs('reg-error').textContent = 'Password must be at least 6 characters';
+    return;
+  }
+  
+  if (p !== c) {
+    qs('reg-error').textContent = 'Passwords do not match';
+    return;
+  }
+  
+  try {
+    await auth.register(u, e, p);
     
-    qs('reg-error').textContent = '';
+    qs('reg-username').value = '';
+    qs('reg-email').value = '';
+    qs('reg-password').value = '';
+    qs('reg-confirm').value = '';
     
-    if (!username || !email || !password || !confirmPassword) {
-        qs('reg-error').textContent = 'Please fill in all fields';
-        return;
-    }
-    
-    if (password.length < 6) {
-        qs('reg-error').textContent = 'Password must be at least 6 characters';
-        return;
-    }
-    
-    if (password !== confirmPassword) {
-        qs('reg-error').textContent = 'Passwords do not match';
-        return;
-    }
-    
-    try {
-        await auth.register({
-            username,
-            email,
-            password,
-            confirmPassword
-        });
-        
-        qs('reg-username').value = '';
-        qs('reg-email').value = '';
-        qs('reg-password').value = '';
-        qs('reg-confirm').value = '';
-        
-        alert('Registration successful! Please log in.');
-        loginS.classList.remove('hidden');
-        regS.classList.add('hidden');
-    } catch (error) {
-        qs('reg-error').textContent = error.message;
-    }
+    alert('Registration successful! Please log in.');
+    loginS.classList.remove('hidden');
+    regS.classList.add('hidden');
+  } catch (error) {
+    qs('reg-error').textContent = error.message || 'Registration failed';
+  }
 };
 
 qs('login-btn').onclick = async () => {
-    const loginId = qs('login-username').value.trim();
-    const password = qs('login-password').value;
+  const loginId = qs('login-username').value.trim();
+  const p = qs('login-password').value;
+  
+  qs('login-error').textContent = '';
+  
+  if (!loginId || !p) {
+    qs('login-error').textContent = 'Please fill in all fields';
+    return;
+  }
+  
+  try {
+    await auth.login(loginId, p);
     
-    qs('login-error').textContent = '';
+    qs('login-username').value = '';
+    qs('login-password').value = '';
     
-    if (!loginId || !password) {
-        qs('login-error').textContent = 'Please fill in all fields';
-        return;
-    }
+    authC.classList.add('hidden');
+    appC.classList.remove('hidden');
+    qs('username-display').textContent = localStorage.getItem('currentUser');
     
-    try {
-        await auth.login({
-            loginId,
-            password
-        });
-        
-        currentUser = loginId;
-        localStorage.setItem('currentUser', currentUser);
-        
-        authC.classList.add('hidden');
-        appC.classList.remove('hidden');
-        qs('username-display').textContent = currentUser;
-        
-        // Initialize the app
-        initHeader();
-        initPomodoro();
-        initTodo();
-        initStats();
-        initAbout();
-        initSettings();
-        initFocusMode();
-    } catch (error) {
-        qs('login-error').textContent = error.message;
-    }
+    initHeader();
+    initPomodoro();
+  } catch (error) {
+    qs('login-error').textContent = error.message || 'Invalid username/email or password';
+  }
 };
 
-qs('logout-btn').onclick = () => {
-  localStorage.removeItem('currentUser');
+document.querySelector('[data-action="logout"]').onclick = () => {
+  auth.logout();
   location.reload();
 };
 
 
 export function initPomodoro() 
 {
+  const currentUser = localStorage.getItem('currentUser');
   const root = qs('root');
   root.innerHTML = `
     <div class="timer-container">
@@ -227,6 +242,7 @@ export function initPomodoro()
 
   function initDurations() 
   {
+
     workDur = settings.work * 60;
     shortDur = settings.short * 60;
     longDur = settings.long * 60;
@@ -254,18 +270,20 @@ export function initPomodoro()
     const statsKey = `stats_${currentUser}`;
     const st = JSON.parse(localStorage.getItem(statsKey) || '{"pomodoros":[],"totalSeconds":0,"streak":0,"lastPomodoroDate":""}');
     
-    const today = new Date().toISOString().split('T')[0];
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    // Get today's date in local timezone
+    const now = new Date();
+    const today = formatDate(now);
+    const yesterday = formatDate(new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1));
     
     if (st.lastPomodoroDate === today) 
     {
-      st.pomodoros.push(new Date().toISOString());
+      st.pomodoros.push(now.toISOString());
       st.totalSeconds += settings.work * 60;
     } 
     else if (!st.lastPomodoroDate || st.lastPomodoroDate === yesterday) 
     {
       st.streak++;
-      st.pomodoros.push(new Date().toISOString());
+      st.pomodoros.push(now.toISOString());
       st.totalSeconds += settings.work * 60;
       st.lastPomodoroDate = today;
       showStreakCelebration(st.streak);
@@ -273,13 +291,20 @@ export function initPomodoro()
     else 
     {
       st.streak = 1;
-      st.pomodoros.push(new Date().toISOString());
+      st.pomodoros.push(now.toISOString());
       st.totalSeconds += settings.work * 60;
       st.lastPomodoroDate = today;
       showStreakCelebration(1);
     }
     
     localStorage.setItem(statsKey, JSON.stringify(st));
+  }
+
+  function formatDate(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
   }
 
   function showStreakCelebration(streak) 
@@ -436,8 +461,7 @@ export function initPomodoro()
   initDurations();
 }
 
-export function initTodo() 
-{
+export function initTodo() {
   const root = qs('root');
   root.innerHTML = `
     <div class="todo-container">
@@ -510,112 +534,114 @@ export function initTodo()
         dueDateInput = qs('task-due-date');
 
   let tasks = [];
-  
-  // Load tasks from API on mount
-  (async () => {
-    try {
-      const { tasks: api } = await import('./api.js');
-      const apiTasks = await api.getAll();
-      tasks = apiTasks.map(task => ({
-        id: task.id,
-        text: task.title,
-        description: task.description,
-        category: task.category,
-        priority: task.priority,
-        dueDate: task.dueDate,
-        reminder: task.reminder,
-        completed: task.progress === 100,
-        createdAt: task.createdAt
-      }));
-      render();
-    } catch (error) {
-      console.error('Failed to load initial tasks:', error);
-      tasks = JSON.parse(localStorage.getItem(`tasks_${currentUser}`) || '[]');
-      render();
-    }
-  })();
 
-  hasDueDate.addEventListener('change', () => 
-  {
+  hasDueDate.addEventListener('change', () => {
     dueDateInput.classList.toggle('hidden', !hasDueDate.checked);
-    if (!hasDueDate.checked) 
-    {
+    if (!hasDueDate.checked) {
       dueDateInput.value = '';
     }
   });
 
-  reminderSelect.addEventListener('change', () => 
-  {
+  reminderSelect.addEventListener('change', () => {
     customReminder.classList.toggle('hidden', reminderSelect.value !== 'custom');
-    if (reminderSelect.value !== 'custom') 
-    {
+    if (reminderSelect.value !== 'custom') {
       customReminder.value = '';
     }
   });
 
-  async function saveRender() {
-    localStorage.setItem(`tasks_${currentUser}`, JSON.stringify(tasks));
+  async function loadTasks() {
     try {
-      const { tasks: api } = await import('./api.js');
-      const apiTasks = await api.getAll();
-      tasks = apiTasks.map(task => ({
-        id: task.id,
-        text: task.title,
-        description: task.description,
-        category: task.category,
-        priority: task.priority,
-        dueDate: task.dueDate,
-        reminder: task.reminder,
-        completed: task.progress === 100,
-        createdAt: task.createdAt
-      }));
+      tasks = await api.tasks.getAll();
       render();
     } catch (error) {
       console.error('Failed to load tasks:', error);
-      render();
+      alert('Failed to load tasks. Please try again.');
     }
   }
 
-  function render() 
-  {
+  async function saveTask(task) {
+    try {
+      console.log('Saving task:', task);
+      
+      // Convert to backend format with all required fields
+      const taskToSave = {
+        id: task.id,
+        userId: task.userId,
+        title: task.title || task.text || "", // Ensure title is never null
+        category: task.category || "work", // Default category if none provided
+        priority: task.priority || 1, // Default to low priority if none provided
+        dueDate: task.dueDate,
+        progress: task.progress || (task.completed ? 2 : 0),
+        completed: task.completed || false
+      };
+
+      // Remove any undefined or null values
+      Object.keys(taskToSave).forEach(key => {
+        if (taskToSave[key] === undefined || taskToSave[key] === null) {
+          delete taskToSave[key];
+        }
+      });
+
+      if (task.id) {
+        console.log('Updating task:', taskToSave);
+        await api.tasks.update(task.id, taskToSave);
+      } else {
+        console.log('Creating task:', taskToSave);
+        await api.tasks.create(taskToSave);
+      }
+      await loadTasks();
+    } catch (error) {
+      console.error('Failed to save task:', error);
+      alert('Failed to save task. Please try again.');
+    }
+  }
+
+  async function deleteTask(id) {
+    try {
+      console.log('Attempting to delete task with ID:', id);
+      const result = await api.tasks.delete(id);
+      console.log('Delete result:', result);
+      await loadTasks();
+    } catch (error) {
+      console.error('Failed to delete task:', error);
+      alert('Failed to delete task. Please try again.');
+    }
+  }
+
+  function render() {
     list.innerHTML = '';
     const category = categoryFilter.value;
     const priority = priorityFilter.value;
     const status = statusFilter.value;
     
-    const filteredTasks = tasks.filter(task => 
-    {
+    const filteredTasks = tasks.filter(task => {
       const categoryMatch = category === 'all' || task.category === category;
-      const priorityMatch = priority === 'all' || task.priority === priority;
+      const priorityMatch = priority === 'all' || task.priority === priorityToEnum(priority);
       const statusMatch = status === 'all' || 
-        (status === 'completed' && task.completed) ||
-        (status === 'pending' && !task.completed && !isOverdue(task)) ||
-        (status === 'overdue' && !task.completed && isOverdue(task));
+        (status === 'completed' && task.progress === 2) ||
+        (status === 'pending' && task.progress !== 2 && !isOverdue(task)) ||
+        (status === 'overdue' && task.progress !== 2 && isOverdue(task));
       return categoryMatch && priorityMatch && statusMatch;
     });
 
-    filteredTasks.forEach((task, i) => 
-    {
+    filteredTasks.forEach(task => {
       const li = document.createElement('li');
-      li.className = `task-item ${task.completed ? 'completed' : ''} priority-${task.priority} ${isOverdue(task) ? 'overdue' : ''}`;
+      li.className = `task-item ${task.progress === 2 ? 'completed' : ''} priority-${task.priority} ${isOverdue(task) ? 'overdue' : ''}`;
       
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
-      checkbox.checked = task.completed;
+      checkbox.checked = task.progress === 2;
       checkbox.onchange = async () => {
         try {
-          const { tasks: api } = await import('./api.js');
-          await api.update(task.id, {
+          const updatedTask = {
             ...task,
-            title: task.text,
-            progress: !task.completed ? 100 : 0
-          });
-          tasks[i].completed = !tasks[i].completed;
-          saveRender();
+            progress: checkbox.checked ? 2 : 0,
+            completed: checkbox.checked
+          };
+          await saveTask(updatedTask);
         } catch (error) {
           console.error('Failed to update task:', error);
           alert('Failed to update task. Please try again.');
-          checkbox.checked = task.completed; // Revert the checkbox
         }
       };
 
@@ -624,32 +650,25 @@ export function initTodo()
       
       const taskText = document.createElement('span');
       taskText.className = 'task-text';
-      taskText.textContent = task.text;
+      taskText.textContent = task.title || task.text || "";
       
       const taskMeta = document.createElement('div');
       taskMeta.className = 'task-meta';
       
       let metaHTML = `
-        <span class="task-category">${task.category}</span>
-        <span class="task-priority">${task.priority}</span>
+        <span class="task-category">${task.category || 'work'}</span>
+        <span class="task-priority">${priorityToText(task.priority)}</span>
       `;
 
-      if (task.dueDate) 
-      {
+      if (task.dueDate) {
         const dueDate = new Date(task.dueDate);
-        const formattedDate = dueDate.toLocaleString('en-US', 
-        {
+        const formattedDate = dueDate.toLocaleString('en-US', {
           month: 'short',
           day: 'numeric',
           hour: '2-digit',
           minute: '2-digit'
         });
         metaHTML += `<span class="task-due-date">Due: ${formattedDate}</span>`;
-      }
-
-      if (task.reminder) 
-      {
-        metaHTML += `<span class="task-reminder">Reminder: ${formatReminder(task.reminder)}</span>`;
       }
 
       taskMeta.innerHTML = metaHTML;
@@ -660,15 +679,18 @@ export function initTodo()
       const deleteBtn = document.createElement('button');
       deleteBtn.className = 'delete-task';
       deleteBtn.innerHTML = '✕';
-      deleteBtn.onclick = async () => {
-        try {
-          const { tasks: api } = await import('./api.js');
-          await api.delete(task.id);
-          tasks.splice(i, 1);
-          saveRender();
-        } catch (error) {
-          console.error('Failed to delete task:', error);
-          alert('Failed to delete task. Please try again.');
+      deleteBtn.onclick = async (e) => {
+        e.preventDefault(); // Prevent any default button behavior
+        e.stopPropagation(); // Stop event bubbling
+        
+        if (confirm('Are you sure you want to delete this task?')) {
+          try {
+            console.log('Delete button clicked for task ID:', task.id);
+            await deleteTask(task.id);
+          } catch (error) {
+            console.error('Error in delete button handler:', error);
+            alert('Failed to delete task. Please try again.');
+          }
         }
       };
 
@@ -679,13 +701,20 @@ export function initTodo()
     });
   }
 
-  function isOverdue(task) 
-  {
+  function priorityToText(priority) {
+    switch (priority) {
+      case 3: return 'high';
+      case 2: return 'medium';
+      case 1: return 'low';
+      default: return 'low';
+    }
+  }
+
+  function isOverdue(task) {
     return task.dueDate && !task.completed && new Date(task.dueDate) < new Date();
   }
 
-  function formatReminder(reminder) 
-  {
+  function formatReminder(reminder) {
     if (reminder === '1day') return '1 Day Before';
     if (reminder === '1week') return '1 Week Before';
     if (reminder === 'custom') return 'Custom';
@@ -695,51 +724,51 @@ export function initTodo()
   add.onclick = async () => {
     const text = inp.value.trim();
     if (!text) return;
-
+    
     const category = qs('task-category').value;
     const priority = qs('task-priority').value;
     const hasDueDateChecked = qs('has-due-date').checked;
     const dueDate = hasDueDateChecked ? qs('task-due-date').value : null;
-    const reminder = qs('task-reminder').value;
-    const customReminderDate = reminder === 'custom' ? qs('custom-reminder').value : null;
     
-    const task = {
-      title: text,
-      description: '',
-      category,
-      priority,
-      dueDate,
-      reminder: reminder === 'custom' ? customReminderDate : reminder,
-      progress: 0
-    };
-
     try {
-      const { tasks: api } = await import('./api.js');
-      const savedTask = await api.create(task);
-      tasks.push({
-        ...task,
-        id: savedTask.id,
-        completed: false,
-        createdAt: new Date().toISOString()
-      });
-      
-      inp.value = '';
-      qs('has-due-date').checked = false;
-      qs('task-due-date').value = '';
-      qs('task-due-date').classList.add('hidden');
-      qs('task-reminder').value = 'none';
-      qs('custom-reminder').value = '';
-      qs('custom-reminder').classList.add('hidden');
-      
-      saveRender();
+        // Check if user is authenticated
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert('Please log in to create tasks');
+            return;
+        }
+
+        const newTask = {
+            text: text,
+            category: category,
+            priority: priorityToEnum(priority),
+            dueDate: dueDate ? new Date(dueDate).toISOString() : null,
+            completed: false
+        };
+        
+        await saveTask(newTask);
+        
+        // Clear the form
+        inp.value = '';
+        qs('has-due-date').checked = false;
+        qs('task-due-date').value = '';
+        qs('task-due-date').classList.add('hidden');
+        qs('task-reminder').value = 'none';
+        qs('custom-reminder').value = '';
+        qs('custom-reminder').classList.add('hidden');
     } catch (error) {
-      console.error('Failed to save task:', error);
-      alert('Failed to save task. Please try again.');
+        console.error('Failed to save task:', error);
+        if (error.message.includes('401')) {
+            alert('Your session has expired. Please log in again.');
+            auth.logout();
+            location.reload();
+        } else {
+            alert('Failed to save task. Please try again.');
+        }
     }
   };
 
-  inp.onkeypress = e => 
-  {
+  inp.onkeypress = e => {
     if (e.key === 'Enter') add.click();
   };
 
@@ -747,11 +776,15 @@ export function initTodo()
   priorityFilter.onchange = render;
   statusFilter.onchange = render;
 
-  render();
+  // Load tasks when the page loads
+  loadTasks();
 }
 
 export function initStats() 
 {
+
+  const currentUser = localStorage.getItem('currentUser');
+
   const root = qs('root');
   const statsKey = `stats_${currentUser}`;
   const st = JSON.parse(localStorage.getItem(statsKey) || '{"pomodoros":[],"totalSeconds":0,"streak":0,"lastPomodoroDate":""}');
@@ -964,6 +997,8 @@ function renderStreakAchievements(currentStreak)
 
 export function initAbout() 
 {
+  
+
   const root = qs('root');
   root.innerHTML = `
     <div class="about-container">
@@ -974,91 +1009,255 @@ export function initAbout()
   `;
 }
 
-function initHeader() 
-{
-  const userPanel = document.querySelector('.user-panel');
-  const userButton = userPanel.querySelector('.user-button');
-  const userAvatar = userPanel.querySelector('.user-avatar');
-  
-  userAvatar.textContent = currentUser?.charAt(0).toUpperCase() || '';
-  
-  userButton.addEventListener('click', (e) => {
-    e.stopPropagation();
-    userPanel.classList.toggle('open');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!userPanel.contains(e.target)) {
-      userPanel.classList.remove('open');
+export function initProfile() {
+    console.log('Starting profile initialization...');
+    const root = qs('root');
+    const currentUser = localStorage.getItem('currentUser');
+    console.log('Profile initialization - currentUser:', currentUser);
+    
+    if (!currentUser) {
+        console.error('No currentUser found in localStorage');
+        return;
     }
-  });
 
-  const dropdownItems = userPanel.querySelectorAll('.dropdown-item');
-  dropdownItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const action = item.dataset.action;
-      
-      switch(action) {
-        case 'profile':
-          userPanel.classList.remove('open');
-          break;
-        case 'settings':
-          userPanel.classList.remove('open');
-          initSettings();
-          break;
-        case 'theme':
-          const themeIcon = item.querySelector('.theme-icon');
-          const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-          document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-          themeIcon.textContent = isDark ? '🌙' : '☀️';
-          localStorage.setItem('theme', isDark ? 'light' : 'dark');
-          break;
-        case 'logout':
-          localStorage.removeItem('currentUser');
-          location.reload();
-          break;
-      }
-    });
-  });
+    console.log('Creating profile HTML with currentUser:', currentUser);
+    root.innerHTML = `
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <span>${currentUser?.charAt(0).toUpperCase() || 'U'}</span>
+                </div>
+                <h2>${currentUser}</h2>
+            </div>
+            
+            <div class="profile-stats">
+                <h3>Account Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-value" id="total-pomodoros">0</span>
+                        <span class="stat-label">Total Pomodoros</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="total-focus-time">0h 0m</span>
+                        <span class="stat-label">Total Focus Time</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="tasks-completed">0</span>
+                        <span class="stat-label">Tasks Completed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="current-streak">0</span>
+                        <span class="stat-label">Current Streak</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-settings">
+                <h3>Account Settings</h3>
+                <div class="settings-group">
+                    <div class="settings-item">
+                        <label>Change Email</label>
+                        <input type="email" id="new-email" placeholder="New email">
+                        <button class="settings-button" id="update-email-btn">Update Email</button>
+                    </div>
+                    
+                    <div class="settings-item">
+                        <label>Change Password</label>
+                        <input type="password" id="current-password" placeholder="Current password">
+                        <input type="password" id="new-password" placeholder="New password">
+                        <input type="password" id="confirm-password" placeholder="Confirm new password">
+                        <button class="settings-button" id="update-password-btn">Update Password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
 
-  const tabButtons = document.querySelectorAll('.tab-btn');
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-      
-      const tab = button.dataset.tab;
-      switch(tab) {
-        case 'pomodoro':
-          initPomodoro();
-          break;
-        case 'todo':
-          initTodo();
-          break;
-        case 'stats':
-          initStats();
-          break;
-        case 'about':
-          initAbout();
-          break;
-        case 'focus':
-          initFocusMode();
-          break;
-      }
-    });
-  });
+    // Add event listeners for the buttons
+    qs('update-email-btn').onclick = updateEmail;
+    qs('update-password-btn').onclick = updatePassword;
 
-  const initialTab = document.querySelector('.tab-btn[data-tab="pomodoro"]');
-  if (initialTab) 
-  {
-    initialTab.classList.add('active');
-  }
+    // Load user stats
+    loadProfileStats();
 }
 
-function initSettings() 
-{
+async function updateEmail() {
+    const newEmail = qs('new-email').value.trim();
+    
+    if (!newEmail) {
+        alert('Please enter a new email address');
+        return;
+    }
+    
+    if (!newEmail.includes('@')) {
+        alert('Please enter a valid email address');
+        return;
+    }
+    
+    try {
+        await apiCall('/auth/update-email', 'PUT', { email: newEmail });
+        alert('Email updated successfully');
+        qs('new-email').value = '';
+    } catch (error) {
+        alert(error.message || 'Failed to update email');
+    }
+}
+
+
+async function loadProfileStats() {
+    try {
+        const stats = await api.stats.getUserStats();
+        console.log('Received stats from API:', stats);
+        
+        // Ensure we have default values if stats is null or undefined
+        const safeStats = stats || {
+            totalPomodoros: 0,
+            totalFocusTime: 0,
+            tasksCompleted: 0,
+            currentStreak: 0
+        };
+        
+        // Update the stats display with safe values
+        const totalPomodoros = document.getElementById('total-pomodoros');
+        const totalFocusTime = document.getElementById('total-focus-time');
+        const tasksCompleted = document.getElementById('tasks-completed');
+        const currentStreak = document.getElementById('current-streak');
+        
+        if (totalPomodoros) totalPomodoros.textContent = safeStats.totalPomodoros || 0;
+        if (totalFocusTime) totalFocusTime.textContent = formatTime(safeStats.totalFocusTime || 0);
+        if (tasksCompleted) tasksCompleted.textContent = safeStats.tasksCompleted || 0;
+        if (currentStreak) currentStreak.textContent = safeStats.currentStreak || 0;
+    } catch (error) {
+        console.error('Failed to load profile stats:', error);
+        // Set default values on error
+        const elements = ['total-pomodoros', 'total-focus-time', 'tasks-completed', 'current-streak'];
+        elements.forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.textContent = id === 'total-focus-time' ? '0h 0m' : '0';
+            }
+        });
+    }
+}
+
+function formatTime(seconds) {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    return `${hours}h ${minutes}m`;
+}
+
+function initHeader() {
+    console.log('Initializing header...');
+    const currentUser = localStorage.getItem('currentUser');
+    console.log('Header initialization - currentUser:', currentUser);
+    
+    const userPanel = document.querySelector('.user-panel');
+    const userButton = userPanel.querySelector('.user-button');
+    const userAvatar = userPanel.querySelector('.user-avatar');
+    
+    console.log('User panel elements:', {
+        userPanel,
+        userButton,
+        userAvatar
+    });
+    
+    userAvatar.textContent = currentUser?.charAt(0).toUpperCase() || '';
+    
+    userButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        userPanel.classList.toggle('open');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!userPanel.contains(e.target)) {
+            userPanel.classList.remove('open');
+        }
+    });
+
+    const dropdownItems = userPanel.querySelectorAll('.dropdown-item');
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const action = item.dataset.action;
+            console.log('Dropdown action clicked:', action);
+            
+            switch(action) {
+                case 'profile':
+                    userPanel.classList.remove('open');
+                    console.log('Initializing profile...');
+                    initProfile();
+                    break;
+                case 'settings':
+                    userPanel.classList.remove('open');
+                    initSettings();
+                    break;
+                case 'theme':
+                    const themeIcon = item.querySelector('.theme-icon');
+                    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                    const newTheme = isDark ? 'light' : 'dark';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    themeIcon.textContent = isDark ? '🌙' : '☀️';
+                    
+                    // Save theme to backend
+                    const settings = {
+                        id: parseInt(localStorage.getItem('settingsId')),
+                        theme: newTheme
+                    };
+                    
+                    api.settings.updateSettings(settings)
+                        .then(() => {
+                            console.log('Theme saved to backend');
+                        })
+                        .catch(error => {
+                            console.error('Failed to save theme:', error);
+                        });
+                    break;
+                case 'logout':
+                    auth.logout();
+                    location.reload();
+                    break;
+            }
+        });
+    });
+
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            const tab = button.dataset.tab;
+            switch(tab) {
+                case 'pomodoro':
+                    initPomodoro();
+                    break;
+                case 'todo':
+                    initTodo();
+                    break;
+                case 'stats':
+                    initStats();
+                    break;
+                case 'about':
+                    initAbout();
+                    break;
+                case 'focus':
+                    initFocusMode();
+                    break;
+            }
+        });
+    });
+
+    const initialTab = document.querySelector('.tab-btn[data-tab="pomodoro"]');
+    if (initialTab) 
+    {
+        initialTab.classList.add('active');
+    }
+}
+
+export function initSettings() {
   const root = qs('root');
+  const currentUser = localStorage.getItem('currentUser');
+  
   root.innerHTML = `
     <div class="settings-container">
       <h2>Settings</h2>
@@ -1068,16 +1267,16 @@ function initSettings()
         <div class="settings-group">
           <div class="settings-item">
             <label>Change Email</label>
-            <input type="email" id="new-email" placeholder="New email">
-            <button class="settings-button" onclick="updateEmail()">Update Email</button>
+            <input type="email" id="settings-email" placeholder="New email">
+            <button class="settings-button" id="settings-email-btn">Update Email</button>
           </div>
           
           <div class="settings-item">
             <label>Change Password</label>
-            <input type="password" id="current-password" placeholder="Current password">
-            <input type="password" id="new-password" placeholder="New password">
-            <input type="password" id="confirm-password" placeholder="Confirm new password">
-            <button class="settings-button" onclick="updatePassword()">Update Password</button>
+            <input type="password" id="settings-current-password" placeholder="Current password">
+            <input type="password" id="settings-new-password" placeholder="New password">
+            <input type="password" id="settings-confirm-password" placeholder="Confirm new password">
+            <button class="settings-button" id="settings-password-btn">Update Password</button>
           </div>
         </div>
       </div>
@@ -1088,7 +1287,7 @@ function initSettings()
           <div class="settings-item">
             <label>Accent Color</label>
             <input type="color" id="accent-color" value="${getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim()}">
-            <button id="apply-color" class="settings-button">Apply Color</button>
+            <button class="settings-button" id="apply-color">Apply Color</button>
           </div>
           
           <div class="settings-item">
@@ -1116,130 +1315,66 @@ function initSettings()
             <label>Daily Reminder Time</label>
             <input type="time" id="reminder-time" value="09:00">
           </div>
-
-          <div class="settings-item">
-            <label>Notification Types</label>
-            <div class="checkbox-group">
-              <label>
-                <input type="checkbox" id="streak-reminder" checked>
-                Streak Reminders
-              </label>
-              <label>
-                <input type="checkbox" id="weekly-report" checked>
-                Weekly Progress Reports
-              </label>
-              <label>
-                <input type="checkbox" id="app-updates" checked>
-                App Updates
-              </label>
-              <label>
-                <input type="checkbox" id="productivity-tips" checked>
-                Productivity Tips
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="settings-section">
-        <h3>Focus Settings</h3>
-        <div class="settings-group">
-          <div class="settings-item">
-            <label>Auto-start Next Session</label>
-            <select id="auto-start">
-              <option value="never">Never</option>
-              <option value="work">After Work Sessions</option>
-              <option value="break">After Breaks</option>
-              <option value="always">Always</option>
-            </select>
-          </div>
-
-          <div class="settings-item">
-            <label>Focus Mode</label>
-            <select id="focus-mode">
-              <option value="normal">Normal</option>
-              <option value="strict">Strict (No Pausing)</option>
-              <option value="flexible">Flexible (Allow Pausing)</option>
-            </select>
-          </div>
-
-          <div class="settings-item">
-            <label>
-              <input type="checkbox" id="fullscreen-mode" checked>
-              Enable Fullscreen Mode
-            </label>
-          </div>
         </div>
       </div>
     </div>
   `;
 
+  // Load saved settings
   loadSettings();
 
-  qs('font-size').addEventListener('change', updateFontSize);
-  qs('auto-start').addEventListener('change', updateAutoStart);
-  qs('focus-mode').addEventListener('change', updateFocusMode);
-  qs('fullscreen-mode').addEventListener('change', updateFullscreenMode);
-  
-  qs('apply-color').addEventListener('click', updateAccentColor);
+  // Add event listeners
+  qs('settings-email-btn').onclick = updateEmail;
+  qs('settings-password-btn').onclick = updatePassword;
+  qs('apply-color').onclick = updateAccentColor;
+  qs('font-size').onchange = updateFontSize;
+  qs('email-notifications').onchange = updateNotifications;
+  qs('reminder-time').onchange = updateReminderTime;
 }
 
-function loadSettings() 
-{
-  const settings = JSON.parse(localStorage.getItem(`settings_${currentUser}`) || '{}');
+
+async function updatePassword() {
+  const currentPassword = qs('settings-current-password').value;
+  const newPassword = qs('settings-new-password').value;
+  const confirmPassword = qs('settings-confirm-password').value;
   
-  if (settings.appearance) 
-  {
-    const accentColor = settings.appearance.accentColor || '#ff6b6b';
-    const fontSize = settings.appearance.fontSize || 'medium';
-
-    qs('accent-color').value = accentColor;
-    qs('font-size').value = fontSize;
-
-    document.documentElement.style.setProperty('--font-size', 
-      fontSize === 'small' ? '14px' : fontSize === 'large' ? '18px' : '16px');
+  if (!currentPassword || !newPassword || !confirmPassword) {
+    alert('Please fill in all password fields');
+    return;
   }
-
-  if (settings.focus) 
-  {
-    qs('auto-start').value = settings.focus.autoStart || 'never';
-    qs('focus-mode').value = settings.focus.mode || 'normal';
-    qs('fullscreen-mode').checked = settings.focus.fullscreen !== false;
+  
+  if (newPassword.length < 6) {
+    alert('New password must be at least 6 characters');
+    return;
+  }
+  
+  if (newPassword !== confirmPassword) {
+    alert('New passwords do not match');
+    return;
+  }
+  
+  try {
+    await apiCall('/auth/update-password', 'PUT', {
+      currentPassword,
+      newPassword
+    });
+    alert('Password updated successfully');
+    qs('settings-current-password').value = '';
+    qs('settings-new-password').value = '';
+    qs('settings-confirm-password').value = '';
+  } catch (error) {
+    alert(error.message || 'Failed to update password');
   }
 }
 
-function saveSettings() 
-{
-  const settings = 
-  {
-    appearance: 
-    {
-      accentColor: qs('accent-color').value,
-      fontSize: qs('font-size').value
-    },
-    focus: 
-    {
-      autoStart: qs('auto-start').value,
-      mode: qs('focus-mode').value,
-      fullscreen: qs('fullscreen-mode').checked
-    }
-  };
-  
-  localStorage.setItem(`settings_${currentUser}`, JSON.stringify(settings));
-}
-
-function updateAccentColor() 
-{
+function updateAccentColor() {
   const colorInput = qs('accent-color');
   const newColor = colorInput.value;
   
   document.documentElement.style.setProperty('--primary-color', newColor);
   document.documentElement.style.setProperty('--hover-color', newColor + '20');
-  document.documentElement.style.setProperty('--border-color', newColor + '40'); 
-  document.documentElement.style.setProperty('--box-shadow', `0 4px 6px ${newColor}20`); 
-  
-  
-  colorInput.value = newColor;
+  document.documentElement.style.setProperty('--border-color', newColor + '40');
+  document.documentElement.style.setProperty('--box-shadow', `0 4px 6px ${newColor}20`);
   
   saveSettings();
 }
@@ -1248,32 +1383,74 @@ function updateFontSize() {
   const size = qs('font-size').value;
   const fontSize = size === 'small' ? '14px' : size === 'large' ? '18px' : '16px';
   document.documentElement.style.setProperty('--font-size', fontSize);
-  document.body.style.fontSize = fontSize; 
+  document.body.style.fontSize = fontSize;
   saveSettings();
 }
 
-function updateAutoStart() 
-{
+function updateNotifications() {
+  const enabled = qs('email-notifications').checked;
   saveSettings();
 }
 
-function updateFocusMode() 
-{
+function updateReminderTime() {
+  const time = qs('reminder-time').value;
   saveSettings();
-
 }
 
-function updateFullscreenMode() {
-  const isFullscreen = qs('fullscreen-mode').checked;
-  if (isFullscreen) 
-  {
-    document.documentElement.requestFullscreen();
-  } 
-  else 
-  {
-    document.exitFullscreen();
+async function loadSettings() {
+  try {
+    const settings = await api.settings.getUserSettings();
+    
+    // Store settings ID for future updates
+    localStorage.setItem('settingsId', settings.id);
+    
+    // Apply theme
+    if (settings.theme) {
+      document.documentElement.setAttribute('data-theme', settings.theme);
+      const themeIcon = document.querySelector('.theme-icon');
+      if (themeIcon) {
+        themeIcon.textContent = settings.theme === 'dark' ? '☀️' : '🌙';
+      }
+    }
+    
+    if (settings.appearance) {
+      const accentColor = settings.appearance.accentColor || '#ff6b6b';
+      const fontSize = settings.appearance.fontSize || 'medium';
+      
+      qs('accent-color').value = accentColor;
+      qs('font-size').value = fontSize;
+      
+      document.documentElement.style.setProperty('--font-size', 
+        fontSize === 'small' ? '14px' : fontSize === 'large' ? '18px' : '16px');
+    }
+    
+    if (settings.notifications) {
+      qs('email-notifications').checked = settings.notifications.enabled !== false;
+      qs('reminder-time').value = settings.notifications.reminderTime || '09:00';
+    }
+  } catch (error) {
+    console.error('Failed to load settings:', error);
   }
-  saveSettings();
+}
+
+async function saveSettings() {
+  const settings = {
+    accentColor: qs('accent-color').value,
+    fontSize: parseInt(qs('font-size').value),
+    enableNotifications: qs('email-notifications').checked,
+    enableSound: true,
+    workDuration: 25,
+    shortBreakDuration: 5,
+    longBreakDuration: 15,
+    longBreakInterval: 4
+  };
+  
+  try {
+    await api.settings.updateUserSettings(settings);
+  } catch (error) {
+    console.error('Failed to save settings:', error);
+    alert('Failed to save settings. Please try again.');
+  }
 }
 
 export function initFocusMode() 
@@ -1630,7 +1807,7 @@ function initFocusModeFunctionality()
         });
       };
 
-      tryPlaySound('mp3')
+      tryPlaySound('wav')
         .catch(() => tryPlaySound('wav'))
         .catch(e => {
           console.error('All sound formats failed:', e);

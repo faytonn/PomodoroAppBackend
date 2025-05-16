@@ -50,14 +50,12 @@ namespace Pomodoro.Persistence.Interceptors
                 }
                 else if (entry.State == EntityState.Deleted)
                 {
-                    // For PomodoroTask and User, perform a real delete
                     if (entry.Entity is PomodoroTask || entry.Entity is User)
                     {
-                        // Keep the state as Deleted to actually remove from database
                         return;
                     }
                     
-                    // For other entities, perform soft delete
+
                     entry.State = EntityState.Modified;
                     entry.Entity.IsDeleted = true;
                     entry.Entity.UpdatedBy = username;

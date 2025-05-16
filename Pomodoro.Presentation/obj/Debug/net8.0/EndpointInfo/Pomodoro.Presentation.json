@@ -678,17 +678,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
+                "$ref": "#/components/schemas/CreateUserDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
+                "$ref": "#/components/schemas/CreateUserDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
+                "$ref": "#/components/schemas/CreateUserDto"
               }
             }
           }
@@ -936,6 +936,28 @@
           "focusScore": {
             "type": "number",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateUserDto": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1198,6 +1220,10 @@
           "longBreakInterval": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          },
+          "theme": {
+            "type": "string",
             "nullable": true
           }
         },

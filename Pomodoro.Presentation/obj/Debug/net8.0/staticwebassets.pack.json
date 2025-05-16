@@ -5,14 +5,6 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
-    },
-    {
-      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\jest.config.js",
-      "PackagePath": "staticwebassets\\jest.config.js"
-    },
-    {
       "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\api.js",
       "PackagePath": "staticwebassets\\js\\api.js"
     },
@@ -27,14 +19,6 @@
     {
       "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\theme.js",
       "PackagePath": "staticwebassets\\js\\theme.js"
-    },
-    {
-      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package-lock.json",
-      "PackagePath": "staticwebassets\\package-lock.json"
-    },
-    {
-      "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package.json",
-      "PackagePath": "staticwebassets\\package.json"
     },
     {
       "Id": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\partials\\pomodoro.html",

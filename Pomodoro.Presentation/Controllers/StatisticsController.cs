@@ -21,40 +21,73 @@ namespace Pomodoro.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> GetUserStatistics()
         {
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-            var statistics = await _statisticsService.GetByUserIdAsync(userId);
-            if (statistics == null)
-                return NotFound();
-            return Ok(statistics);
+            try
+            {
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                var statistics = await _statisticsService.GetByUserIdAsync(userId);
+                if (statistics == null)
+                    return NotFound();
+                return Ok(statistics);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateStatisticsDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-            var created = await _statisticsService.CreateAsync(dto, userId);
-            if (!created)
-                return BadRequest("Could not create statistics.");
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
 
-            return Ok();
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                var created = await _statisticsService.CreateAsync(dto, userId);
+                if (!created)
+                    return BadRequest("Could not create statistics.");
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UpdateStatisticsDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            var updated = await _statisticsService.UpdateAsync(dto);
-            if (!updated)
-                return NotFound();
+                var updated = await _statisticsService.UpdateAsync(dto);
+                if (!updated)
+                    return NotFound();
 
-            return Ok();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 } 

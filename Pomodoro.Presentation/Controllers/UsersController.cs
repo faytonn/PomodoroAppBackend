@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pomodoro.Application.DTOs.User;
 using Pomodoro.Application.Interfaces.Services;
@@ -7,6 +8,7 @@ namespace Pomodoro.Presentation.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -19,62 +21,97 @@ namespace Pomodoro.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var users = await _userService.GetAllAsync();
-            return Ok(users);
+            try
+            {
+                var users = await _userService.GetAllAsync();
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var user = await _userService.GetByIdAsync(id);
-            if (user == null)
-                return NotFound();
-            return Ok(user);
+            try
+            {
+                var user = await _userService.GetByIdAsync(id);
+                if (user == null)
+                    return NotFound();
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateUserDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var user = new User
+            try
             {
-                Username = dto.Username,
-                Email = dto.Email,
-                FirstName = dto.FirstName,
-                LastName = dto.LastName
-            };
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            var createdUser = await _userService.CreateAsync(user);
-            if (createdUser == null)
-                return BadRequest("Could not create user.");
+                var user = new User
+                {
+                    Username = dto.Username,
+                    Email = dto.Email,
+                    FirstName = dto.FirstName,
+                    LastName = dto.LastName
+                };
 
-            return CreatedAtAction(nameof(Get), new { id = createdUser.Id }, createdUser);
+                var createdUser = await _userService.CreateAsync(user);
+                if (createdUser == null)
+                    return BadRequest("Could not create user.");
+
+                return CreatedAtAction(nameof(Get), new { id = createdUser.Id }, createdUser);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateUserDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            dto.Id = id;
-            var updated = await _userService.UpdateAsync(dto);
-            if (!updated)
-                return NotFound();
+                dto.Id = id;
+                var updated = await _userService.UpdateAsync(dto);
+                if (!updated)
+                    return NotFound();
 
-            return Ok();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var deleted = await _userService.DeleteAsync(id);
-            if (!deleted)
-                return NotFound();
+            try
+            {
+                var deleted = await _userService.DeleteAsync(id);
+                if (!deleted)
+                    return NotFound();
 
-            return Ok();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 } 

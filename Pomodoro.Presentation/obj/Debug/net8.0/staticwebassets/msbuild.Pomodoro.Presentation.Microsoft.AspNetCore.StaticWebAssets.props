@@ -12,47 +12,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>t3v673jvqs</Fingerprint>
-      <Integrity>+SXqq4Et1jUr1SXiJTfu44AN9XSL9j6yCcWoNXBa15k=</Integrity>
+      <Fingerprint>eg9tdbjz6l</Fingerprint>
+      <Integrity>4gFedUFB9En4AM580zA4exbdznG3ZnlKNJG1n9zvjSw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Pomodoro.Presentation</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Pomodoro.Presentation</BasePath>
-      <RelativePath>index.html</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>505kicguzq</Fingerprint>
-      <Integrity>VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\jest.config.js'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Pomodoro.Presentation</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Pomodoro.Presentation</BasePath>
-      <RelativePath>jest.config.js</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pxzenfhagf</Fingerprint>
-      <Integrity>bVCS2PqvfUkkAHU7nSg2D48PIqSFEn3r+JBTacTqCg4=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\jest.config.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\api.js'))">
       <SourceType>Package</SourceType>
@@ -66,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zshkfms5vg</Fingerprint>
-      <Integrity>Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc=</Integrity>
+      <Fingerprint>4waq3yhfdw</Fingerprint>
+      <Integrity>pDTcGTgD4ZR9uMzINQgvKELninS3AdKTjWa2rupjxkA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\api.js'))</OriginalItemSpec>
@@ -84,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fzlbt641dx</Fingerprint>
-      <Integrity>9SaFAXMC3HGFABgA9VhZrUBw0Ql0u4tnOov/s+KeLZ0=</Integrity>
+      <Fingerprint>cru406ndl8</Fingerprint>
+      <Integrity>uPxbNOgS3+o0t+2bSj1MsQ9KRuWxb+6Pw+LngijsdUk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\router.js'))</OriginalItemSpec>
@@ -102,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2brwn4zznm</Fingerprint>
-      <Integrity>wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk=</Integrity>
+      <Fingerprint>828ub588z4</Fingerprint>
+      <Integrity>UCNyTk+jgM9RsDV8wZpZzUs26K+8LCV1tqi/FhdeOow=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script.js'))</OriginalItemSpec>
@@ -125,42 +89,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\theme.js'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\package.json'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Pomodoro.Presentation</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Pomodoro.Presentation</BasePath>
-      <RelativePath>package.json</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9vfpel8y0o</Fingerprint>
-      <Integrity>lV4FR0+F1i4EZztwUmzYp5xV2gAg//QmssVq4vvTwpA=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\package.json'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\package-lock.json'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Pomodoro.Presentation</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Pomodoro.Presentation</BasePath>
-      <RelativePath>package-lock.json</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tsnswgjse9</Fingerprint>
-      <Integrity>gwjOUPYOCXXfl+uMaYzBAx0CYy0eKbuFgKLLNI1011U=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\package-lock.json'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\partials\pomodoro.html'))">
       <SourceType>Package</SourceType>

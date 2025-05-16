@@ -331,6 +331,10 @@ namespace Pomodoro.Persistence.Migrations
                     b.Property<int>("ShortBreakDuration")
                         .HasColumnType("int");
 
+                    b.Property<string>("Theme")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 

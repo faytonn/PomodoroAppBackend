@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Pomodoro.Domain.Entities;
 using Pomodoro.Persistence.Interceptors;
+using System.Reflection;
 
 namespace Pomodoro.Persistence.Context
 {
@@ -8,16 +9,9 @@ namespace Pomodoro.Persistence.Context
     {
         private readonly BaseEntityInterceptor _entityInterceptor;
 
-        public AppDbContext(DbContextOptions<AppDbContext> options, BaseEntityInterceptor entityInterceptor)
-            : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options, BaseEntityInterceptor entityInterceptor) : base(options)
         {
             _entityInterceptor = entityInterceptor;
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.AddInterceptors(_entityInterceptor);
-            base.OnConfiguring(optionsBuilder);
         }
 
         public DbSet<User> Users { get; set; }
@@ -31,6 +25,24 @@ namespace Pomodoro.Persistence.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+           
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            
+            modelBuilder.Entity<User>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<PomodoroTask>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<PomodoroSession>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<FocusSession>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<BlockedSite>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<Statistics>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<UserSettings>().HasQueryFilter(x => !x.IsDeleted);
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.AddInterceptors(_entityInterceptor);
+            base.OnConfiguring(optionsBuilder);
         }
     }
 } 

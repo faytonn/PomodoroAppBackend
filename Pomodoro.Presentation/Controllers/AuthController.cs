@@ -62,7 +62,7 @@ namespace Pomodoro.Presentation.Controllers
                 return Unauthorized("Invalid login credentials");
 
             var token = GenerateJwtToken(user);
-            return Ok(new { token });
+            return Ok(new { token, username = user.Username });
         }
 
         private string HashPassword(string password)

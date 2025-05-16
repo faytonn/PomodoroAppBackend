@@ -6,6 +6,7 @@ namespace Pomodoro.Application.Interfaces.Services
     {
         Task<UserSettingsDto?> GetByIdAsync(int id);
         Task<UserSettingsDto?> GetByUserIdAsync(int userId);
+        Task<bool> CreateAsync(CreateUserSettingsDto dto);
         Task<bool> UpdateAsync(UpdateUserSettingsDto dto);
     }
 } 

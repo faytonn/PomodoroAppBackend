@@ -21,31 +21,86 @@ namespace Pomodoro.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-            var items = await _service.GetByUserIdAsync(userId);
-            return Ok(items);
+            try
+            {
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                var items = await _service.GetByUserIdAsync(userId);
+                return Ok(items);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var site = await _service.GetByIdAsync(id);
-            return site == null ? NotFound() : Ok(site);
+            try
+            {
+                var site = await _service.GetByIdAsync(id);
+                if (site == null)
+                    return NotFound();
+                return Ok(site);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateBlockedSiteDto dto)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-            var created = await _service.CreateAsync(dto);
-            return created ? Ok() : BadRequest("Could not create blocked site.");
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                dto.UserId = userId;
+                var created = await _service.CreateAsync(dto);
+                if (!created)
+                    return BadRequest("Could not create blocked site.");
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var deleted = await _service.DeleteAsync(id);
-            return deleted ? Ok() : NotFound();
+            try
+            {
+                var deleted = await _service.DeleteAsync(id);
+                if (!deleted)
+                    return NotFound();
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 } 

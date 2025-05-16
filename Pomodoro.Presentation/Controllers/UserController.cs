@@ -17,40 +17,63 @@ namespace Pomodoro.Presentation.Controllers
             _userService = userService;
         }
 
-
         [Authorize]
         [HttpPut("email")]
         public async Task<IActionResult> UpdateEmail([FromBody] UpdateEmailDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-            var updated = await _userService.UpdateEmailAsync(userId, dto.Email);
-            
-            if (!updated)
-                return BadRequest("Failed to update email. It might be already taken.");
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
 
-            return Ok();
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                var updated = await _userService.UpdateEmailAsync(userId, dto.Email);
+                if (!updated)
+                    return BadRequest("Failed to update email. It might be already taken.");
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [Authorize]
         [HttpPut("password")]
         public async Task<IActionResult> UpdatePassword([FromBody] UpdatePasswordDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            if (dto.NewPassword != dto.ConfirmPassword)
-                return BadRequest("New password and confirmation do not match.");
+                if (dto.NewPassword != dto.ConfirmPassword)
+                    return BadRequest("New password and confirmation do not match.");
 
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-            var updated = await _userService.UpdatePasswordAsync(userId, dto.CurrentPassword, dto.NewPassword);
-            
-            if (!updated)
-                return BadRequest("Failed to update password. Current password might be incorrect.");
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
 
-            return Ok();
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                var updated = await _userService.UpdatePasswordAsync(userId, dto.CurrentPassword, dto.NewPassword);
+                if (!updated)
+                    return BadRequest("Failed to update password. Current password might be incorrect.");
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 } 

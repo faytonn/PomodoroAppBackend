@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bOICEIUSq53O3zYtnWhuPs0uTDp4SsEX0fZCA3S/jUY=",
+  "Hash": "v4DmVM/zR2QxsaKbON89sB7eOOlTIx3gRCjD7DFNTS0=",
   "Source": "Pomodoro.Presentation",
   "BasePath": "_content/Pomodoro.Presentation",
   "Mode": "Default",
@@ -31,53 +31,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "t3v673jvqs",
-      "Integrity": "+SXqq4Et1jUr1SXiJTfu44AN9XSL9j6yCcWoNXBa15k=",
+      "Fingerprint": "eg9tdbjz6l",
+      "Integrity": "4gFedUFB9En4AM580zA4exbdznG3ZnlKNJG1n9zvjSw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\index.html",
-      "SourceId": "Pomodoro.Presentation",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\",
-      "BasePath": "_content/Pomodoro.Presentation",
-      "RelativePath": "index#[.{fingerprint}]?.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "505kicguzq",
-      "Integrity": "VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\jest.config.js",
-      "SourceId": "Pomodoro.Presentation",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\",
-      "BasePath": "_content/Pomodoro.Presentation",
-      "RelativePath": "jest.config#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "pxzenfhagf",
-      "Integrity": "bVCS2PqvfUkkAHU7nSg2D48PIqSFEn3r+JBTacTqCg4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\jest.config.js"
     },
     {
       "Identity": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\api.js",
@@ -94,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zshkfms5vg",
-      "Integrity": "Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc=",
+      "Fingerprint": "4waq3yhfdw",
+      "Integrity": "pDTcGTgD4ZR9uMzINQgvKELninS3AdKTjWa2rupjxkA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\api.js"
@@ -115,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fzlbt641dx",
-      "Integrity": "9SaFAXMC3HGFABgA9VhZrUBw0Ql0u4tnOov/s+KeLZ0=",
+      "Fingerprint": "cru406ndl8",
+      "Integrity": "uPxbNOgS3+o0t+2bSj1MsQ9KRuWxb+6Pw+LngijsdUk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\router.js"
@@ -136,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2brwn4zznm",
-      "Integrity": "wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk=",
+      "Fingerprint": "828ub588z4",
+      "Integrity": "UCNyTk+jgM9RsDV8wZpZzUs26K+8LCV1tqi/FhdeOow=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\script.js"
@@ -162,48 +120,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\theme.js"
-    },
-    {
-      "Identity": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package.json",
-      "SourceId": "Pomodoro.Presentation",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\",
-      "BasePath": "_content/Pomodoro.Presentation",
-      "RelativePath": "package#[.{fingerprint}]?.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "9vfpel8y0o",
-      "Integrity": "lV4FR0+F1i4EZztwUmzYp5xV2gAg//QmssVq4vvTwpA=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\package.json"
-    },
-    {
-      "Identity": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package-lock.json",
-      "SourceId": "Pomodoro.Presentation",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\",
-      "BasePath": "_content/Pomodoro.Presentation",
-      "RelativePath": "package-lock#[.{fingerprint}]?.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "tsnswgjse9",
-      "Integrity": "gwjOUPYOCXXfl+uMaYzBAx0CYy0eKbuFgKLLNI1011U=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\package-lock.json"
     },
     {
       "Identity": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\partials\\pomodoro.html",
@@ -302,7 +218,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30505"
+          "Value": "32717"
         },
         {
           "Name": "Content-Type",
@@ -310,11 +226,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+SXqq4Et1jUr1SXiJTfu44AN9XSL9j6yCcWoNXBa15k=\""
+          "Value": "\"4gFedUFB9En4AM580zA4exbdznG3ZnlKNJG1n9zvjSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 08:30:52 GMT"
+          "Value": "Sun, 27 Apr 2025 21:29:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -324,12 +240,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+SXqq4Et1jUr1SXiJTfu44AN9XSL9j6yCcWoNXBa15k="
+          "Value": "sha256-4gFedUFB9En4AM580zA4exbdznG3ZnlKNJG1n9zvjSw="
         }
       ]
     },
     {
-      "Route": "css/styles.t3v673jvqs.css",
+      "Route": "css/styles.eg9tdbjz6l.css",
       "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\css\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -339,7 +255,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30505"
+          "Value": "32717"
         },
         {
           "Name": "Content-Type",
@@ -347,11 +263,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+SXqq4Et1jUr1SXiJTfu44AN9XSL9j6yCcWoNXBa15k=\""
+          "Value": "\"4gFedUFB9En4AM580zA4exbdznG3ZnlKNJG1n9zvjSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 08:30:52 GMT"
+          "Value": "Sun, 27 Apr 2025 21:29:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -361,7 +277,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t3v673jvqs"
+          "Value": "eg9tdbjz6l"
         },
         {
           "Name": "label",
@@ -369,13 +285,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+SXqq4Et1jUr1SXiJTfu44AN9XSL9j6yCcWoNXBa15k="
+          "Value": "sha256-4gFedUFB9En4AM580zA4exbdznG3ZnlKNJG1n9zvjSw="
         }
       ]
     },
     {
-      "Route": "index.505kicguzq.html",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\index.html",
+      "Route": "js/api.4waq3yhfdw.js",
+      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\api.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -384,19 +300,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4357"
+          "Value": "4907"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/html"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA=\""
+          "Value": "\"pDTcGTgD4ZR9uMzINQgvKELninS3AdKTjWa2rupjxkA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 13:58:24 GMT"
+          "Value": "Wed, 30 Apr 2025 17:30:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -406,134 +322,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "505kicguzq"
+          "Value": "4waq3yhfdw"
         },
         {
           "Name": "label",
-          "Value": "index.html"
+          "Value": "js/api.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA="
-        }
-      ]
-    },
-    {
-      "Route": "index.html",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4357"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 13:58:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA="
-        }
-      ]
-    },
-    {
-      "Route": "jest.config.js",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\jest.config.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "103"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bVCS2PqvfUkkAHU7nSg2D48PIqSFEn3r+JBTacTqCg4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 17:45:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bVCS2PqvfUkkAHU7nSg2D48PIqSFEn3r+JBTacTqCg4="
-        }
-      ]
-    },
-    {
-      "Route": "jest.config.pxzenfhagf.js",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\jest.config.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "103"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bVCS2PqvfUkkAHU7nSg2D48PIqSFEn3r+JBTacTqCg4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 17:45:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pxzenfhagf"
-        },
-        {
-          "Name": "label",
-          "Value": "jest.config.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bVCS2PqvfUkkAHU7nSg2D48PIqSFEn3r+JBTacTqCg4="
+          "Value": "sha256-pDTcGTgD4ZR9uMzINQgvKELninS3AdKTjWa2rupjxkA="
         }
       ]
     },
@@ -548,7 +345,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5770"
+          "Value": "4907"
         },
         {
           "Name": "Content-Type",
@@ -556,11 +353,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc=\""
+          "Value": "\"pDTcGTgD4ZR9uMzINQgvKELninS3AdKTjWa2rupjxkA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 17:21:55 GMT"
+          "Value": "Wed, 30 Apr 2025 17:30:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -570,57 +367,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc="
+          "Value": "sha256-pDTcGTgD4ZR9uMzINQgvKELninS3AdKTjWa2rupjxkA="
         }
       ]
     },
     {
-      "Route": "js/api.zshkfms5vg.js",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\api.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5770"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 17:21:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zshkfms5vg"
-        },
-        {
-          "Name": "label",
-          "Value": "js/api.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc="
-        }
-      ]
-    },
-    {
-      "Route": "js/router.fzlbt641dx.js",
+      "Route": "js/router.cru406ndl8.js",
       "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\router.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -630,7 +382,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1227"
+          "Value": "1305"
         },
         {
           "Name": "Content-Type",
@@ -638,11 +390,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9SaFAXMC3HGFABgA9VhZrUBw0Ql0u4tnOov/s+KeLZ0=\""
+          "Value": "\"uPxbNOgS3+o0t+2bSj1MsQ9KRuWxb+6Pw+LngijsdUk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 22:05:38 GMT"
+          "Value": "Fri, 16 May 2025 22:37:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -652,7 +404,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fzlbt641dx"
+          "Value": "cru406ndl8"
         },
         {
           "Name": "label",
@@ -660,7 +412,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9SaFAXMC3HGFABgA9VhZrUBw0Ql0u4tnOov/s+KeLZ0="
+          "Value": "sha256-uPxbNOgS3+o0t+2bSj1MsQ9KRuWxb+6Pw+LngijsdUk="
         }
       ]
     },
@@ -675,7 +427,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1227"
+          "Value": "1305"
         },
         {
           "Name": "Content-Type",
@@ -683,11 +435,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9SaFAXMC3HGFABgA9VhZrUBw0Ql0u4tnOov/s+KeLZ0=\""
+          "Value": "\"uPxbNOgS3+o0t+2bSj1MsQ9KRuWxb+6Pw+LngijsdUk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 22:05:38 GMT"
+          "Value": "Fri, 16 May 2025 22:37:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -697,12 +449,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9SaFAXMC3HGFABgA9VhZrUBw0Ql0u4tnOov/s+KeLZ0="
+          "Value": "sha256-uPxbNOgS3+o0t+2bSj1MsQ9KRuWxb+6Pw+LngijsdUk="
         }
       ]
     },
     {
-      "Route": "js/script.2brwn4zznm.js",
+      "Route": "js/script.828ub588z4.js",
       "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\script.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -712,7 +464,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55906"
+          "Value": "61923"
         },
         {
           "Name": "Content-Type",
@@ -720,11 +472,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk=\""
+          "Value": "\"UCNyTk+jgM9RsDV8wZpZzUs26K+8LCV1tqi/FhdeOow=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 13:45:42 GMT"
+          "Value": "Fri, 16 May 2025 23:11:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -734,7 +486,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2brwn4zznm"
+          "Value": "828ub588z4"
         },
         {
           "Name": "label",
@@ -742,7 +494,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk="
+          "Value": "sha256-UCNyTk+jgM9RsDV8wZpZzUs26K+8LCV1tqi/FhdeOow="
         }
       ]
     },
@@ -757,7 +509,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55906"
+          "Value": "61923"
         },
         {
           "Name": "Content-Type",
@@ -765,11 +517,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk=\""
+          "Value": "\"UCNyTk+jgM9RsDV8wZpZzUs26K+8LCV1tqi/FhdeOow=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 13:45:42 GMT"
+          "Value": "Fri, 16 May 2025 23:11:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -779,7 +531,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wrZvBn9lObOASIPJUPsiHKstrKUVpUDk0uerqxHR7Fk="
+          "Value": "sha256-UCNyTk+jgM9RsDV8wZpZzUs26K+8LCV1tqi/FhdeOow="
         }
       ]
     },
@@ -862,170 +614,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-aRQEmjl1AHB+TGBucP/YFA9T/rPkTPAwwMewhSmrVV4="
-        }
-      ]
-    },
-    {
-      "Route": "package.9vfpel8y0o.json",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "280"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lV4FR0+F1i4EZztwUmzYp5xV2gAg//QmssVq4vvTwpA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 17:46:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9vfpel8y0o"
-        },
-        {
-          "Name": "label",
-          "Value": "package.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lV4FR0+F1i4EZztwUmzYp5xV2gAg//QmssVq4vvTwpA="
-        }
-      ]
-    },
-    {
-      "Route": "package.json",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "280"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lV4FR0+F1i4EZztwUmzYp5xV2gAg//QmssVq4vvTwpA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 17:46:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lV4FR0+F1i4EZztwUmzYp5xV2gAg//QmssVq4vvTwpA="
-        }
-      ]
-    },
-    {
-      "Route": "package-lock.json",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package-lock.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "151609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gwjOUPYOCXXfl+uMaYzBAx0CYy0eKbuFgKLLNI1011U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 17:46:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gwjOUPYOCXXfl+uMaYzBAx0CYy0eKbuFgKLLNI1011U="
-        }
-      ]
-    },
-    {
-      "Route": "package-lock.tsnswgjse9.json",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\package-lock.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "151609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gwjOUPYOCXXfl+uMaYzBAx0CYy0eKbuFgKLLNI1011U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 17:46:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tsnswgjse9"
-        },
-        {
-          "Name": "label",
-          "Value": "package-lock.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gwjOUPYOCXXfl+uMaYzBAx0CYy0eKbuFgKLLNI1011U="
         }
       ]
     },

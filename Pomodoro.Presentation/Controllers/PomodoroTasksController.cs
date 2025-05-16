@@ -39,13 +39,21 @@ namespace Pomodoro.Presentation.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var task = await _pomodoroTaskService.GetByIdAsync(id);
-            if (task == null)
-                return NotFound();
-            return Ok(task);
+            try
+            {
+                var task = await _pomodoroTaskService.GetByIdAsync(id);
+                if (task == null)
+                    return NotFound();
+                return Ok(task);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [Authorize]
@@ -76,28 +84,44 @@ namespace Pomodoro.Presentation.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdatePomodoroTaskDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            dto.Id = id; 
-            var updated = await _pomodoroTaskService.UpdateAsync(dto);
-            if (!updated)
-                return NotFound();
+                dto.Id = id; 
+                var updated = await _pomodoroTaskService.UpdateAsync(dto);
+                if (!updated)
+                    return NotFound();
 
-            return Ok();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var deleted = await _pomodoroTaskService.DeleteAsync(id);
-            if (!deleted)
-                return NotFound();
+            try
+            {
+                var deleted = await _pomodoroTaskService.DeleteAsync(id);
+                if (!deleted)
+                    return NotFound();
 
-            return Ok();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 } 
