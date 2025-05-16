@@ -941,20 +941,15 @@
         "additionalProperties": false
       },
       "LoginDto": {
-        "required": [
-          "loginId",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "loginId": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "password": {
-            "maxLength": 100,
-            "minLength": 6,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -969,32 +964,23 @@
         "format": "int32"
       },
       "RegisterDto": {
-        "required": [
-          "confirmPassword",
-          "email",
-          "password",
-          "username"
-        ],
         "type": "object",
         "properties": {
           "username": {
-            "maxLength": 50,
-            "minLength": 3,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "email": {
-            "minLength": 1,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
           "password": {
-            "maxLength": 100,
-            "minLength": 6,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "confirmPassword": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

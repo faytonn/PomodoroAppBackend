@@ -4,6 +4,10 @@ using Pomodoro.Application.Interfaces.Services;
 using Pomodoro.Domain.Entities;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.Extensions.Configuration;
+using System.Security.Claims;
 
 namespace Pomodoro.Presentation.Controllers
 {
@@ -12,10 +16,12 @@ namespace Pomodoro.Presentation.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IConfiguration _configuration;
 
-        public AuthController(IUserService userService)
+        public AuthController(IUserService userService, IConfiguration configuration)
         {
             _userService = userService;
+            _configuration = configuration;
         }
 
         [HttpPost("register")]
@@ -55,8 +61,8 @@ namespace Pomodoro.Presentation.Controllers
             if (user.PasswordHash != hashedPassword)
                 return Unauthorized("Invalid login credentials");
 
-            // TODO: Generate JWT token here
-            return Ok(new { message = "Login successful" });
+            var token = GenerateJwtToken(user);
+            return Ok(new { token });
         }
 
         private string HashPassword(string password)
@@ -66,6 +72,30 @@ namespace Pomodoro.Presentation.Controllers
                 var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
                 return Convert.ToBase64String(hashedBytes);
             }
+        }
+
+        private string GenerateJwtToken(User user)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+                new Claim("uid", user.Id.ToString()),  
+                new Claim(JwtRegisteredClaimNames.Sub, user.Username),
+                new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            };
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Issuer"],
+                claims: claims,
+                expires: DateTime.Now.AddMinutes(120),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

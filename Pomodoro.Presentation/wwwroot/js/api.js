@@ -3,17 +3,22 @@ const API_BASE_URL = '/api';
 export const tasks = {
     async create(task) {
         try {
+            const token = localStorage.getItem('token');
+            console.log('Token for task creation:', token);
+            
             const response = await fetch(`${API_BASE_URL}/PomodoroTasks`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify(task)
             });
 
             if (!response.ok) {
-                throw new Error('Failed to create task');
+                const errorData = await response.json();
+                console.error('Task creation error:', errorData);
+                throw new Error(errorData.message || 'Failed to create task');
             }
 
             return await response.json();
@@ -25,14 +30,19 @@ export const tasks = {
 
     async getAll() {
         try {
+            const token = localStorage.getItem('token');
+            console.log('Token for getting tasks:', token);
+            
             const response = await fetch(`${API_BASE_URL}/PomodoroTasks`, {
                 headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    'Authorization': `Bearer ${token}`
                 }
             });
 
             if (!response.ok) {
-                throw new Error('Failed to fetch tasks');
+                const errorData = await response.json();
+                console.error('Get tasks error:', errorData);
+                throw new Error(errorData.message || 'Failed to fetch tasks');
             }
 
             return await response.json();
@@ -44,17 +54,22 @@ export const tasks = {
 
     async update(id, task) {
         try {
+            const token = localStorage.getItem('token');
+            console.log('Token for task update:', token);
+            
             const response = await fetch(`${API_BASE_URL}/PomodoroTasks/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify(task)
             });
 
             if (!response.ok) {
-                throw new Error('Failed to update task');
+                const errorData = await response.json();
+                console.error('Task update error:', errorData);
+                throw new Error(errorData.message || 'Failed to update task');
             }
 
             return true;
@@ -66,18 +81,22 @@ export const tasks = {
 
     async delete(id) {
         try {
+            const token = localStorage.getItem('token');
+            console.log('Token for task deletion:', token);
+            
             const response = await fetch(`${API_BASE_URL}/PomodoroTasks/${id}`, {
                 method: 'DELETE',
                 headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    'Authorization': `Bearer ${token}`
                 }
             });
 
             if (!response.ok) {
-                throw new Error('Failed to delete task');
+                const errorData = await response.json();
+                console.error('Task deletion error:', errorData);
+                throw new Error(errorData.message || 'Failed to delete task');
             }
 
-            // Check if there's any content to parse
             const contentType = response.headers.get('content-type');
             if (contentType && contentType.includes('application/json')) {
                 return await response.json();
@@ -119,6 +138,7 @@ export const auth = {
 
     async login(loginData) {
         try {
+            console.log('Sending login request:', loginData);
             const response = await fetch(`${API_BASE_URL}/auth/login`, {
                 method: 'POST',
                 headers: {
@@ -129,11 +149,15 @@ export const auth = {
 
             if (!response.ok) {
                 const errorData = await response.json();
+                console.error('Login error response:', errorData);
                 throw new Error(errorData.message || 'Login failed');
             }
 
             const data = await response.json();
+            console.log('Login successful, received data:', data);
+            
             if (data.token) {
+                console.log('Storing token in localStorage');
                 localStorage.setItem('token', data.token);
             }
             return data;

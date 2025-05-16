@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Pomodoro.Application.DTOs.AuthDTO.LoginDto",
+        "Type": "LoginDto",
         "IsRequired": true
       }
     ],

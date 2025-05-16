@@ -17,7 +17,6 @@ namespace Pomodoro.Presentation.Controllers
             _userService = userService;
         }
 
-        // ... existing endpoints ...
 
         [Authorize]
         [HttpPut("email")]

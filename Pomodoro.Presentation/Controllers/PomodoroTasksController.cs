@@ -21,9 +21,22 @@ namespace Pomodoro.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-            var items = await _pomodoroTaskService.GetByUserIdAsync(userId);
-            return Ok(items);
+            try
+            {
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                var items = await _pomodoroTaskService.GetByUserIdAsync(userId);
+                return Ok(items);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpGet("{id}")]
@@ -39,15 +52,28 @@ namespace Pomodoro.Presentation.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreatePomodoroTaskDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-            var createdTask = await _pomodoroTaskService.CreateAsync(dto, userId);
-            if (createdTask == null)
-                return BadRequest("Could not create task.");
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
 
-            return Ok(createdTask);
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                var createdTask = await _pomodoroTaskService.CreateAsync(dto, userId);
+                if (createdTask == null)
+                    return BadRequest("Could not create task.");
+
+                return Ok(createdTask);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpPut("{id}")]

@@ -12,6 +12,7 @@ namespace Pomodoro.Application.Mappings
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<User, RegisterDto>().ReverseMap();
             CreateMap<User, UpdateUserDto>().ReverseMap();
+            CreateMap<User, CreateUserDto>().ReverseMap();
         }
     }
 } 

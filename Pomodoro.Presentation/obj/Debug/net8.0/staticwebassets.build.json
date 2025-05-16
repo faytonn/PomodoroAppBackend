@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NCaJYDU/jDniCKdaoLrBPmHFzCIz2Ky7vJ1WH4TDSEM=",
+  "Hash": "bOICEIUSq53O3zYtnWhuPs0uTDp4SsEX0fZCA3S/jUY=",
   "Source": "Pomodoro.Presentation",
   "BasePath": "_content/Pomodoro.Presentation",
   "Mode": "Default",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lphq0h4m52",
-      "Integrity": "13/FJN/YcZTiGN49Gj/NopAm1MiRdq9oYv3Qt07IEko=",
+      "Fingerprint": "505kicguzq",
+      "Integrity": "VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tgt8xqaw4l",
-      "Integrity": "LVB/+x8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM=",
+      "Fingerprint": "zshkfms5vg",
+      "Integrity": "Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\api.js"
@@ -374,6 +374,51 @@
       ]
     },
     {
+      "Route": "index.505kicguzq.html",
+      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 13:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "505kicguzq"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA="
+        }
+      ]
+    },
+    {
       "Route": "index.html",
       "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\index.html",
       "Selectors": [],
@@ -384,7 +429,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4292"
+          "Value": "4357"
         },
         {
           "Name": "Content-Type",
@@ -392,11 +437,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"13/FJN/YcZTiGN49Gj/NopAm1MiRdq9oYv3Qt07IEko=\""
+          "Value": "\"VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 22:10:34 GMT"
+          "Value": "Wed, 30 Apr 2025 13:58:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -406,52 +451,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-13/FJN/YcZTiGN49Gj/NopAm1MiRdq9oYv3Qt07IEko="
-        }
-      ]
-    },
-    {
-      "Route": "index.lphq0h4m52.html",
-      "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4292"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"13/FJN/YcZTiGN49Gj/NopAm1MiRdq9oYv3Qt07IEko=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 22:10:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lphq0h4m52"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-13/FJN/YcZTiGN49Gj/NopAm1MiRdq9oYv3Qt07IEko="
+          "Value": "sha256-VdjSs8uHPWsnDqP8neLWVmRzMtA/L3ZKcQkhS7mXZFA="
         }
       ]
     },
@@ -548,7 +548,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4324"
+          "Value": "5770"
         },
         {
           "Name": "Content-Type",
@@ -556,11 +556,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LVB/+x8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM=\""
+          "Value": "\"Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 13:45:22 GMT"
+          "Value": "Wed, 30 Apr 2025 17:21:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -570,12 +570,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LVB/+x8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM="
+          "Value": "sha256-Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc="
         }
       ]
     },
     {
-      "Route": "js/api.tgt8xqaw4l.js",
+      "Route": "js/api.zshkfms5vg.js",
       "AssetFile": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\wwwroot\\js\\api.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -585,7 +585,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4324"
+          "Value": "5770"
         },
         {
           "Name": "Content-Type",
@@ -593,11 +593,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LVB/+x8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM=\""
+          "Value": "\"Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 13:45:22 GMT"
+          "Value": "Wed, 30 Apr 2025 17:21:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -607,7 +607,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tgt8xqaw4l"
+          "Value": "zshkfms5vg"
         },
         {
           "Name": "label",
@@ -615,7 +615,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LVB/+x8cnpYaZAehcrJb8KAWmwYezLFEkp/zZvlCoDM="
+          "Value": "sha256-Ix41PPJpgVITXl/q2UmU3Qbd0brfv1Dq9q0nvcNcKbc="
         }
       ]
     },

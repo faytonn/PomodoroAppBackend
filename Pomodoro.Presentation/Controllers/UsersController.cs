@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Pomodoro.Application.DTOs.User;
 using Pomodoro.Application.Interfaces.Services;
+using Pomodoro.Domain.Entities;
 
 namespace Pomodoro.Presentation.Controllers
 {
@@ -37,7 +38,15 @@ namespace Pomodoro.Presentation.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var createdUser = await _userService.CreateAsync(dto);
+            var user = new User
+            {
+                Username = dto.Username,
+                Email = dto.Email,
+                FirstName = dto.FirstName,
+                LastName = dto.LastName
+            };
+
+            var createdUser = await _userService.CreateAsync(user);
             if (createdUser == null)
                 return BadRequest("Could not create user.");
 

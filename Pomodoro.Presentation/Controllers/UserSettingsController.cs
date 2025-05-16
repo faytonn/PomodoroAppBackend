@@ -21,25 +21,53 @@ namespace Pomodoro.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> GetUserSettings()
         {
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-            var settings = await _userSettingsService.GetByUserIdAsync(userId);
-            if (settings == null)
-                return NotFound();
-            return Ok(settings);
+            try
+            {
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                var settings = await _userSettingsService.GetByUserIdAsync(userId);
+                if (settings == null)
+                    return NotFound();
+                return Ok(settings);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UpdateUserSettingsDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            var updated = await _userSettingsService.UpdateAsync(dto);
-            if (!updated)
-                return NotFound();
+                var userIdClaim = User.FindFirst("uid");
+                if (userIdClaim == null)
+                    return BadRequest("User ID not found in token");
 
-            return Ok();
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                    return BadRequest("Invalid user ID format in token");
+
+                dto.UserId = userId;
+                var updated = await _userSettingsService.UpdateAsync(dto);
+                if (!updated)
+                    return NotFound();
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 } 
