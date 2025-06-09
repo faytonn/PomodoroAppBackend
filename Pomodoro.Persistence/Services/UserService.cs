@@ -45,12 +45,10 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<User?> GetUserByLoginIdAsync(string loginId)
         {
-            // First try to find by email
             var user = await _userRepository.GetByEmailAsync(loginId);
             if (user != null)
                 return user;
 
-            // If not found by email, try to find by username
             return await _userRepository.GetByUsernameAsync(loginId);
         }
 

@@ -33,11 +33,9 @@ namespace Pomodoro.Persistence.Services
 
         public async Task<bool> CreateAsync(CreateStatisticsDto dto, int userId)
         {
-            // Check if statistics already exist for this user
             var existingStats = await _statisticsRepository.GetByUserIdAsync(userId);
             if (existingStats != null)
             {
-                // Update existing statistics
                 existingStats.TotalFocusTime = dto.TotalFocusTime;
                 existingStats.SessionsCompleted = dto.SessionsCompleted;
                 existingStats.GoalsAchieved = dto.GoalsAchieved;
@@ -46,7 +44,6 @@ namespace Pomodoro.Persistence.Services
             }
             else
             {
-                // Create new statistics
                 var statistics = new Statistics
                 {
                     UserId = userId,

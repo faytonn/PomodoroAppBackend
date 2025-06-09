@@ -32,10 +32,10 @@ namespace Pomodoro.Persistence.Configurations
                 .IsRequired()
                 .HasDefaultValue("light");
 
-            builder.HasOne(x => x.User)
-                .WithOne(x => x.Settings)
-                .HasForeignKey<UserSettings>(x => x.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
+            //builder.HasOne(x => x.User)
+            //    .WithOne(x => x.Settings)
+            //    .HasForeignKey<UserSettings>(x => x.UserId)
+            //    .OnDelete(DeleteBehavior.Cascade);
         }
     }
 } 

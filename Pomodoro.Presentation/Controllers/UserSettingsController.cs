@@ -31,7 +31,6 @@ namespace Pomodoro.Presentation.Controllers
             var settings = await _userSettingsService.GetByUserIdAsync(userId);
             if (settings == null)
             {
-                // Create default settings if they don't exist
                 var defaultSettings = new CreateUserSettingsDto
                 {
                     UserId = userId,
@@ -93,7 +92,6 @@ namespace Pomodoro.Presentation.Controllers
                 return Ok();
             }
 
-            // Update existing settings
             dto.Id = settings.Id;
             var updated = await _userSettingsService.UpdateAsync(dto);
             if (!updated)

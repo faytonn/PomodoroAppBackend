@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pomodoro.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3330c5099fc6d5aa84c0c29fff60b6e798a0d603")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cfe858d3131651f543bf163d35ee6ca171c216a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pomodoro.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pomodoro.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
