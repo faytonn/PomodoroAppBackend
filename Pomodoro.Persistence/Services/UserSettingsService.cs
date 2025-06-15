@@ -1,8 +1,10 @@
 using AutoMapper;
+using Pomodoro.Application.DTOs.User;
 using Pomodoro.Application.DTOs.UserSettings;
 using Pomodoro.Application.Interfaces.Repositories;
 using Pomodoro.Application.Interfaces.Services;
 using Pomodoro.Domain.Entities;
+using Pomodoro.Persistence.Repositories;
 
 namespace Pomodoro.Persistence.Services
 {
@@ -55,5 +57,7 @@ namespace Pomodoro.Persistence.Services
             _userSettingsRepository.Update(settings);
             return await _userSettingsRepository.SaveChangesAsync() > 0;
         }
+
+       
     }
 } 

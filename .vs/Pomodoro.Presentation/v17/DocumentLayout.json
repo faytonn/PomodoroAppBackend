@@ -3,6 +3,50 @@
   "WorkspaceRootPath": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\interfaces\\services\\iusersettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\interfaces\\services\\iusersettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\services\\usersettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\services\\usersettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\userautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\userautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\dtos\\user\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\dtos\\user\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\usersettingsautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\usersettingsautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\statisticsautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\statisticsautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\pomodorosessionautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\pomodorosessionautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\focussessionautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\focussessionautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\blockedsiteautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\blockedsiteautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\interceptors\\baseentityinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\interceptors\\baseentityinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF1361A4-57DF-40E9-AC20-F2E9F21FD3E1}|Pomodoro.Presentation\\Pomodoro.Presentation.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FF1361A4-57DF-40E9-AC20-F2E9F21FD3E1}|Pomodoro.Presentation\\Pomodoro.Presentation.csproj|solutionrelative:pomodoro.presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -43,20 +87,12 @@
       "RelativeMoniker": "D:0:0:{FF1361A4-57DF-40E9-AC20-F2E9F21FD3E1}|Pomodoro.Presentation\\Pomodoro.Presentation.csproj|solutionrelative:pomodoro.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\services\\usersettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\services\\usersettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,10 +123,6 @@
       "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\context\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\interceptors\\baseentityinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\interceptors\\baseentityinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC23D6B7-A5C9-4D76-8F1D-864495F0E183}|Pomodoro.Domain\\Pomodoro.Domain.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.domain\\enums\\taskpriority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC23D6B7-A5C9-4D76-8F1D-864495F0E183}|Pomodoro.Domain\\Pomodoro.Domain.csproj|solutionrelative:pomodoro.domain\\enums\\taskpriority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,18 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\pomodorotaskautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\pomodorotaskautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\pomodorosessionautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\pomodorosessionautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\blockedsiteautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\blockedsiteautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\focussessionautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\focussessionautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\interfaces\\services\\ifocussessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -157,10 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\dtos\\user\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\dtos\\user\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\dtos\\user\\updatepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -279,20 +295,8 @@
       "RelativeMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|solutionrelative:pomodoro.persistence\\repositories\\usersettingsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\usersettingsautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\usersettingsautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\interfaces\\services\\iusersettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\interfaces\\services\\iusersettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC23D6B7-A5C9-4D76-8F1D-864495F0E183}|Pomodoro.Domain\\Pomodoro.Domain.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC23D6B7-A5C9-4D76-8F1D-864495F0E183}|Pomodoro.Domain\\Pomodoro.Domain.csproj|solutionrelative:pomodoro.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.application\\mappings\\userautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B20947E6-1859-4E22-BA39-1C3C29F26B65}|Pomodoro.Application\\Pomodoro.Application.csproj|solutionrelative:pomodoro.application\\mappings\\userautomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92E772B4-C149-4227-B701-DB45F8EDAF73}|Pomodoro.Persistence\\Pomodoro.Persistence.csproj|c:\\users\\fatima\\source\\repos\\pomodoro.presentation\\pomodoro.persistence\\repositories\\pomodorosessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -499,383 +503,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PomodoroSessionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\PomodoroSessionsController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\PomodoroSessionsController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\PomodoroSessionsController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\PomodoroSessionsController.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Title": "StatisticsAutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\StatisticsAutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\StatisticsAutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\StatisticsAutoMapperProfile.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Mappings\\StatisticsAutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:23:43.124Z",
+              "WhenOpened": "2025-06-15T19:25:39.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PomodoroTasksController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\PomodoroTasksController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\PomodoroTasksController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\PomodoroTasksController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\PomodoroTasksController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Title": "UserSettingsAutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\UserSettingsAutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\UserSettingsAutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\UserSettingsAutoMapperProfile.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Mappings\\UserSettingsAutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:18:59.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StatisticsController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\StatisticsController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\StatisticsController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\StatisticsController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\StatisticsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:23:56.995Z",
+              "WhenOpened": "2025-05-16T22:32:53.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "UserAutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\UserAutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\UserAutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\UserAutoMapperProfile.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Mappings\\UserAutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T19:01:56.254Z",
+              "WhenOpened": "2025-04-30T13:48:13.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\User\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\User\\UpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\User\\UpdateUserDto.cs",
+              "RelativeToolTip": "Pomodoro.Application\\DTOs\\User\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:36:48.848Z",
+              "WhenOpened": "2025-04-30T13:48:24.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserSettingsController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UserSettingsController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\UserSettingsController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UserSettingsController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\UserSettingsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Title": "IUserSettingsService.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IUserSettingsService.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IUserSettingsService.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IUserSettingsService.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Services\\IUserSettingsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:43:17.019Z",
+              "WhenOpened": "2025-05-16T23:03:10.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\appsettings.Development.json",
-              "RelativeToolTip": "Pomodoro.Presentation\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-27T18:47:19.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FocusSessionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\FocusSessionsController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\FocusSessionsController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\FocusSessionsController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\FocusSessionsController.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAowBoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:10:29.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BlockedSitesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\BlockedSitesController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\BlockedSitesController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\BlockedSitesController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\BlockedSitesController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwBkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:22:53.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAA5wFQAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:38:38.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "UserSettingsService.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\UserSettingsService.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\UserSettingsService.cs",
               "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\UserSettingsService.cs",
               "RelativeToolTip": "Pomodoro.Persistence\\Services\\UserSettingsService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwBYAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T07:35:40.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:49:08.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:34:32.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\UserService.cs",
               "RelativeToolTip": "Pomodoro.Persistence\\Services\\UserService.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAA5wDMAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwHEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T21:21:48.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StatisticsService.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\StatisticsService.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\StatisticsService.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\StatisticsService.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Services\\StatisticsService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:00:02.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PomodoroTaskService.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\PomodoroTaskService.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\PomodoroTaskService.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\PomodoroTaskService.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Services\\PomodoroTaskService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAjwDkAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:17:53.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PomodoroSessionService.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\PomodoroSessionService.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\PomodoroSessionService.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\PomodoroSessionService.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Services\\PomodoroSessionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:09:56.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BlockedSiteService.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\BlockedSiteService.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\BlockedSiteService.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\BlockedSiteService.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Services\\BlockedSiteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:16:46.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FocusSessionService.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\FocusSessionService.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\FocusSessionService.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\FocusSessionService.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Services\\FocusSessionService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAewB0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:15:20.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwBEAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:49:24.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AppDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Context\\AppDbContextFactory.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Context\\AppDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Context\\AppDbContextFactory.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Context\\AppDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:45:05.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BaseEntityInterceptor.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Interceptors\\BaseEntityInterceptor.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Interceptors\\BaseEntityInterceptor.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Interceptors\\BaseEntityInterceptor.cs",
-              "RelativeToolTip": "Pomodoro.Persistence\\Interceptors\\BaseEntityInterceptor.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwAwAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:14:28.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TaskPriority.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\TaskPriority.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Domain\\Enums\\TaskPriority.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\TaskPriority.cs",
-              "RelativeToolTip": "Pomodoro.Domain\\Enums\\TaskPriority.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:13:55.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PomodoroSessionType.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\PomodoroSessionType.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Domain\\Enums\\PomodoroSessionType.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\PomodoroSessionType.cs",
-              "RelativeToolTip": "Pomodoro.Domain\\Enums\\PomodoroSessionType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:13:54.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\Admin.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Domain\\AppSettingModels\\Admin.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\Admin.cs",
-              "RelativeToolTip": "Pomodoro.Domain\\AppSettingModels\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:13:00.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CloudinaryOptions.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\CloudinaryOptions.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Domain\\AppSettingModels\\CloudinaryOptions.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\CloudinaryOptions.cs",
-              "RelativeToolTip": "Pomodoro.Domain\\AppSettingModels\\CloudinaryOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:13:02.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ApplicationServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\ServiceRegistrations\\ApplicationServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\ServiceRegistrations\\ApplicationServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\ServiceRegistrations\\ApplicationServiceRegistration.cs",
-              "RelativeToolTip": "Pomodoro.Application\\ServiceRegistrations\\ApplicationServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T19:07:28.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PomodoroTaskAutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\PomodoroTaskAutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\PomodoroTaskAutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\PomodoroTaskAutoMapperProfile.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Mappings\\PomodoroTaskAutoMapperProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:12:49.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PomodoroSessionAutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\PomodoroSessionAutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\PomodoroSessionAutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\PomodoroSessionAutoMapperProfile.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Mappings\\PomodoroSessionAutoMapperProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:46.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 8,
               "Title": "FocusSessionAutoMapperProfile.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\FocusSessionAutoMapperProfile.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\FocusSessionAutoMapperProfile.cs",
@@ -888,59 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IPomodoroSessionService.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IPomodoroSessionService.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IPomodoroSessionService.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IPomodoroSessionService.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Services\\IPomodoroSessionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:07:56.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IFocusSessionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IFocusSessionRepository.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IFocusSessionRepository.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IFocusSessionRepository.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Repositories\\IFocusSessionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:33:48.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IBlockedSiteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IBlockedSiteRepository.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IBlockedSiteRepository.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IBlockedSiteRepository.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Repositories\\IBlockedSiteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:33:44.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UserSettingsDto.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\UserSettings\\UserSettingsDto.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\UserSettings\\UserSettingsDto.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\UserSettings\\UserSettingsDto.cs",
-              "RelativeToolTip": "Pomodoro.Application\\DTOs\\UserSettings\\UserSettingsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T22:57:55.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 9,
               "Title": "BlockedSiteAutoMapperProfile.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\BlockedSiteAutoMapperProfile.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\BlockedSiteAutoMapperProfile.cs",
@@ -953,7 +619,382 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 10,
+              "Title": "BaseEntityInterceptor.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Interceptors\\BaseEntityInterceptor.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Interceptors\\BaseEntityInterceptor.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Interceptors\\BaseEntityInterceptor.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Interceptors\\BaseEntityInterceptor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:14:28.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PomodoroSessionAutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\PomodoroSessionAutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\PomodoroSessionAutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\PomodoroSessionAutoMapperProfile.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Mappings\\PomodoroSessionAutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T22:23:46.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\appsettings.Development.json",
+              "RelativeToolTip": "Pomodoro.Presentation\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-27T18:47:19.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserSettingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UserSettingsController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\UserSettingsController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UserSettingsController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\UserSettingsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T07:43:17.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:36:48.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:01:56.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\StatisticsController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:23:56.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PomodoroTasksController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\PomodoroTasksController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\PomodoroTasksController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\PomodoroTasksController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\PomodoroTasksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:18:59.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PomodoroSessionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\PomodoroSessionsController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\PomodoroSessionsController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\PomodoroSessionsController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\PomodoroSessionsController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:23:43.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FocusSessionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\FocusSessionsController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\FocusSessionsController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\FocusSessionsController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\FocusSessionsController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:10:29.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BlockedSitesController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\BlockedSitesController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\BlockedSitesController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\BlockedSitesController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\BlockedSitesController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwBkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:22:53.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Pomodoro.Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAA5wFQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:38:38.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T07:49:08.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:34:32.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StatisticsService.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\StatisticsService.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\StatisticsService.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\StatisticsService.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Services\\StatisticsService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:00:02.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PomodoroTaskService.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\PomodoroTaskService.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\PomodoroTaskService.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\PomodoroTaskService.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Services\\PomodoroTaskService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAjwDkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:17:53.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PomodoroSessionService.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\PomodoroSessionService.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\PomodoroSessionService.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\PomodoroSessionService.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Services\\PomodoroSessionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:09:56.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BlockedSiteService.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\BlockedSiteService.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\BlockedSiteService.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\BlockedSiteService.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Services\\BlockedSiteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:16:46.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FocusSessionService.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\FocusSessionService.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Services\\FocusSessionService.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Services\\FocusSessionService.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Services\\FocusSessionService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAewB0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:15:20.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwBEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:49:24.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Context\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Persistence\\Context\\AppDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Context\\AppDbContextFactory.cs",
+              "RelativeToolTip": "Pomodoro.Persistence\\Context\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:45:05.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TaskPriority.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\TaskPriority.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Domain\\Enums\\TaskPriority.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\TaskPriority.cs",
+              "RelativeToolTip": "Pomodoro.Domain\\Enums\\TaskPriority.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:13:55.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PomodoroSessionType.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\PomodoroSessionType.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Domain\\Enums\\PomodoroSessionType.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\PomodoroSessionType.cs",
+              "RelativeToolTip": "Pomodoro.Domain\\Enums\\PomodoroSessionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:13:54.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\Admin.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Domain\\AppSettingModels\\Admin.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\Admin.cs",
+              "RelativeToolTip": "Pomodoro.Domain\\AppSettingModels\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:13:00.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CloudinaryOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\CloudinaryOptions.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Domain\\AppSettingModels\\CloudinaryOptions.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\CloudinaryOptions.cs",
+              "RelativeToolTip": "Pomodoro.Domain\\AppSettingModels\\CloudinaryOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:13:02.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ApplicationServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\ServiceRegistrations\\ApplicationServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\ServiceRegistrations\\ApplicationServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\ServiceRegistrations\\ApplicationServiceRegistration.cs",
+              "RelativeToolTip": "Pomodoro.Application\\ServiceRegistrations\\ApplicationServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T19:07:28.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PomodoroTaskAutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\PomodoroTaskAutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\PomodoroTaskAutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\PomodoroTaskAutoMapperProfile.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Mappings\\PomodoroTaskAutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:12:49.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IPomodoroSessionService.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IPomodoroSessionService.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IPomodoroSessionService.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IPomodoroSessionService.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Services\\IPomodoroSessionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:07:56.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IFocusSessionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IFocusSessionRepository.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IFocusSessionRepository.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IFocusSessionRepository.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Repositories\\IFocusSessionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:33:48.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IBlockedSiteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IBlockedSiteRepository.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IBlockedSiteRepository.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IBlockedSiteRepository.cs",
+              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Repositories\\IBlockedSiteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:33:44.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UserSettingsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\UserSettings\\UserSettingsDto.cs",
+              "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\UserSettings\\UserSettingsDto.cs",
+              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\UserSettings\\UserSettingsDto.cs",
+              "RelativeToolTip": "Pomodoro.Application\\DTOs\\UserSettings\\UserSettingsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T22:57:55.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
               "Title": "UpdateUserSettingsDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\UserSettings\\UpdateUserSettingsDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\UserSettings\\UpdateUserSettingsDto.cs",
@@ -961,12 +1002,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\UserSettings\\UpdateUserSettingsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T22:31:01.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T22:31:01.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "IFocusSessionService.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IFocusSessionService.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IFocusSessionService.cs",
@@ -974,12 +1014,11 @@
               "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Services\\IFocusSessionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T21:07:44.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T21:07:44.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "CreateUserSettingsDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\UserSettings\\CreateUserSettingsDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\UserSettings\\CreateUserSettingsDto.cs",
@@ -987,12 +1026,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\UserSettings\\CreateUserSettingsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T22:30:41.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T22:30:41.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\User\\UserDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\User\\UserDto.cs",
@@ -1000,25 +1038,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\User\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:41:32.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T07:41:32.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UpdateUserDto.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\User\\UpdateUserDto.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\User\\UpdateUserDto.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\User\\UpdateUserDto.cs",
-              "RelativeToolTip": "Pomodoro.Application\\DTOs\\User\\UpdateUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T13:48:24.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "UpdatePasswordDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\User\\UpdatePasswordDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\User\\UpdatePasswordDto.cs",
@@ -1026,12 +1050,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\User\\UpdatePasswordDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T13:48:35.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T13:48:35.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "UpdateEmailDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\User\\UpdateEmailDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\User\\UpdateEmailDto.cs",
@@ -1039,12 +1062,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\User\\UpdateEmailDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T13:48:32.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T13:48:32.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "CreateUserDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\User\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\User\\CreateUserDto.cs",
@@ -1052,12 +1074,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\User\\CreateUserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:32.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:32.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "StatisticsDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\Statistics\\StatisticsDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\Statistics\\StatisticsDto.cs",
@@ -1065,12 +1086,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\Statistics\\StatisticsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:30.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:30.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "UpdateStatisticsDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\Statistics\\UpdateStatisticsDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\Statistics\\UpdateStatisticsDto.cs",
@@ -1078,12 +1098,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\Statistics\\UpdateStatisticsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:28.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:28.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "CreateStatisticsDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\Statistics\\CreateStatisticsDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\Statistics\\CreateStatisticsDto.cs",
@@ -1091,12 +1110,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\Statistics\\CreateStatisticsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:27.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:27.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "UpdatePomodoroSessionDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\PomodoroSession\\UpdatePomodoroSessionDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\PomodoroSession\\UpdatePomodoroSessionDto.cs",
@@ -1104,12 +1122,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\PomodoroSession\\UpdatePomodoroSessionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:26.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:26.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "PomodoroSessionDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\PomodoroSession\\PomodoroSessionDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\PomodoroSession\\PomodoroSessionDto.cs",
@@ -1117,12 +1134,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\PomodoroSession\\PomodoroSessionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:25.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:25.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "CreatePomodoroSessionDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\PomodoroSession\\CreatePomodoroSessionDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\PomodoroSession\\CreatePomodoroSessionDto.cs",
@@ -1130,12 +1146,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\PomodoroSession\\CreatePomodoroSessionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:24.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:24.316Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "UpdateFocusSessionDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\FocusSession\\UpdateFocusSessionDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\FocusSession\\UpdateFocusSessionDto.cs",
@@ -1143,12 +1158,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\FocusSession\\UpdateFocusSessionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:18.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:18.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 57,
               "Title": "FocusSessionDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\FocusSession\\FocusSessionDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\FocusSession\\FocusSessionDto.cs",
@@ -1156,12 +1170,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\FocusSession\\FocusSessionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:16.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:16.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 58,
               "Title": "CreateFocusSessionDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\FocusSession\\CreateFocusSessionDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\FocusSession\\CreateFocusSessionDto.cs",
@@ -1169,12 +1182,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\FocusSession\\CreateFocusSessionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:16.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:16.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "CreatePomodoroTaskDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\PomdoroTask\\CreatePomodoroTaskDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\PomdoroTask\\CreatePomodoroTaskDto.cs",
@@ -1182,12 +1194,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\PomdoroTask\\CreatePomodoroTaskDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T22:19:21.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T22:19:21.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "PomodoroTaskDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\PomdoroTask\\PomodoroTaskDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\PomdoroTask\\PomodoroTaskDto.cs",
@@ -1195,12 +1206,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\PomdoroTask\\PomodoroTaskDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:57:49.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T17:57:49.665Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "UpdatePomodoroTaskDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\PomdoroTask\\UpdatePomodoroTaskDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\PomdoroTask\\UpdatePomodoroTaskDto.cs",
@@ -1208,12 +1218,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\PomdoroTask\\UpdatePomodoroTaskDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:57:32.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T17:57:32.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 59,
               "Title": "MailKitConfigurationDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\Email\\MailKitConfigurationDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\Email\\MailKitConfigurationDto.cs",
@@ -1221,12 +1230,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\Email\\MailKitConfigurationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:23:13.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T22:23:13.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 65,
               "Title": "UserSettingsConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Configurations\\UserSettingsConfiguration.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Configurations\\UserSettingsConfiguration.cs",
@@ -1234,12 +1242,11 @@
               "RelativeToolTip": "Pomodoro.Persistence\\Configurations\\UserSettingsConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T23:15:56.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T23:15:56.156Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 66,
               "Title": "UserSettings.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Entities\\UserSettings.cs",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\Entities\\UserSettings.cs",
@@ -1251,7 +1258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 67,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Pomodoro.Presentation\\Program.cs",
@@ -1263,7 +1270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 64,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\AuthDTO\\RegisterDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\AuthDTO\\RegisterDto.cs",
@@ -1271,12 +1278,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\AuthDTO\\RegisterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:26:04.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T20:26:04.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 63,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\AuthDTO\\LoginDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\AuthDTO\\LoginDto.cs",
@@ -1284,12 +1290,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\AuthDTO\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:25:31.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T20:25:31.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 62,
               "Title": "BlockedSiteDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\BlockedSite\\BlockedSiteDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\BlockedSite\\BlockedSiteDto.cs",
@@ -1297,12 +1302,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\BlockedSite\\BlockedSiteDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:12:17.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T18:12:17.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 61,
               "Title": "CreateBlockedSiteDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\BlockedSite\\CreateBlockedSiteDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\BlockedSite\\CreateBlockedSiteDto.cs",
@@ -1310,12 +1314,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\BlockedSite\\CreateBlockedSiteDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:12:18.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T18:12:18.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 60,
               "Title": "EmailSendDto.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\DTOs\\Email\\EmailSendDto.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\DTOs\\Email\\EmailSendDto.cs",
@@ -1323,12 +1326,11 @@
               "RelativeToolTip": "Pomodoro.Application\\DTOs\\Email\\EmailSendDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T23:30:44.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T23:30:44.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 69,
               "Title": "PersistenceServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\ServiceRegistrations\\PersistenceServiceRegistration.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\ServiceRegistrations\\PersistenceServiceRegistration.cs",
@@ -1340,7 +1342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 71,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Configurations\\UserConfiguration.cs",
@@ -1352,7 +1354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 70,
               "Title": "PomodoroTaskConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Configurations\\PomodoroTaskConfiguration.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Configurations\\PomodoroTaskConfiguration.cs",
@@ -1364,7 +1366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 68,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IEmailService.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IEmailService.cs",
@@ -1376,31 +1378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "UserSettingsAutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\UserSettingsAutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\UserSettingsAutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\UserSettingsAutoMapperProfile.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Mappings\\UserSettingsAutoMapperProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T22:32:53.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "IUserSettingsService.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IUserSettingsService.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IUserSettingsService.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IUserSettingsService.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Interfaces\\Services\\IUserSettingsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T23:03:10.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 72,
               "Title": "UserSettingsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\UserSettingsRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\UserSettingsRepository.cs",
@@ -1412,7 +1390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 115,
               "Title": "20250516225935_AddedThemePreferenceToDB.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250516225935_AddedThemePreferenceToDB.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250516225935_AddedThemePreferenceToDB.cs",
@@ -1424,7 +1402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 73,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\Entities\\User.cs",
@@ -1436,7 +1414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 108,
               "Title": "20250430082840_tryingToFixSomething.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250430082840_tryingToFixSomething.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250430082840_tryingToFixSomething.cs",
@@ -1448,7 +1426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 114,
               "Title": "20250430172618_RemovedId.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250430172618_RemovedId.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250430172618_RemovedId.cs",
@@ -1460,19 +1438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "UserAutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\UserAutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Pomodoro.Application\\Mappings\\UserAutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Mappings\\UserAutoMapperProfile.cs",
-              "RelativeToolTip": "Pomodoro.Application\\Mappings\\UserAutoMapperProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T13:48:13.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 109,
               "Title": "20250430082328_fixedBugs.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250430082328_fixedBugs.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250430082328_fixedBugs.cs",
@@ -1484,7 +1450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 110,
               "Title": "20250430080432_forgotToAddDbSet.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250430080432_forgotToAddDbSet.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250430080432_forgotToAddDbSet.cs",
@@ -1496,7 +1462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 111,
               "Title": "20250430080256_editedUserSettings.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250430080256_editedUserSettings.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250430080256_editedUserSettings.cs",
@@ -1508,7 +1474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "PomodoroSessionRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\PomodoroSessionRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\PomodoroSessionRepository.cs",
@@ -1520,7 +1486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "ITaskRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\ITaskRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\ITaskRepository.cs",
@@ -1532,7 +1498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "BlockedSiteRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\BlockedSiteRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\BlockedSiteRepository.cs",
@@ -1544,7 +1510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 77,
               "Title": "PomodoroTaskRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\PomodoroTaskRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\PomodoroTaskRepository.cs",
@@ -1556,7 +1522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 78,
               "Title": "FocusSessionRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\FocusSessionRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\FocusSessionRepository.cs",
@@ -1568,7 +1534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "IUserSettingsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IUserSettingsRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IUserSettingsRepository.cs",
@@ -1580,7 +1546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 79,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\GenericRepository.cs",
@@ -1592,7 +1558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "Settings.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Entities\\Settings.cs",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\Entities\\Settings.cs",
@@ -1604,7 +1570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "StatisticsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Repositories\\StatisticsRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Repositories\\StatisticsRepository.cs",
@@ -1616,7 +1582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "Pomodoro.Presentation.http",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Pomodoro.Presentation.http",
               "RelativeDocumentMoniker": "Pomodoro.Presentation\\Pomodoro.Presentation.http",
@@ -1628,7 +1594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "IPomodoroTaskService.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IPomodoroTaskService.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IPomodoroTaskService.cs",
@@ -1640,7 +1606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "IStatisticsService.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IStatisticsService.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IStatisticsService.cs",
@@ -1652,7 +1618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 112,
               "Title": "20250429165914_createdAnotherDatabase.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250429165914_createdAnotherDatabase.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250429165914_createdAnotherDatabase.cs",
@@ -1664,7 +1630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 113,
               "Title": "20250429165644_removedDescription1.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250429165644_removedDescription1.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250429165644_removedDescription1.cs",
@@ -1676,7 +1642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "20250429164931_removedDescription.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250429164931_removedDescription.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250429164931_removedDescription.cs",
@@ -1688,7 +1654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\appsettings.json",
               "RelativeDocumentMoniker": "Pomodoro.Presentation\\appsettings.json",
@@ -1700,7 +1666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 88,
               "Title": "PomodoroTask.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Entities\\PomodoroTask.cs",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\Entities\\PomodoroTask.cs",
@@ -1712,7 +1678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 89,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IUserService.cs",
@@ -1724,7 +1690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 90,
               "Title": "IBlockedSiteService.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Services\\IBlockedSiteService.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Services\\IBlockedSiteService.cs",
@@ -1736,7 +1702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 106,
               "Title": "20250427204602_addedPasswordforUser.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250427204602_addedPasswordforUser.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250427204602_addedPasswordforUser.cs",
@@ -1748,7 +1714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 91,
               "Title": "IStatisticsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IStatisticsRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IStatisticsRepository.cs",
@@ -1760,7 +1726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 92,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Pomodoro.Presentation\\Properties\\launchSettings.json",
@@ -1772,7 +1738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 93,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -1784,7 +1750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 94,
               "Title": "20250427184540_init.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250427184540_init.Designer.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250427184540_init.Designer.cs",
@@ -1796,7 +1762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 96,
               "Title": "IPomodoroSessionRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IPomodoroSessionRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IPomodoroSessionRepository.cs",
@@ -1808,7 +1774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 95,
               "Title": "IPomodoroTaskRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IPomodoroTaskRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IPomodoroTaskRepository.cs",
@@ -1820,7 +1786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 107,
               "Title": "20250427184540_init.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Migrations\\20250427184540_init.cs",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Migrations\\20250427184540_init.cs",
@@ -1832,7 +1798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 97,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Interfaces\\Repositories\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Interfaces\\Repositories\\IGenericRepository.cs",
@@ -1844,7 +1810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 98,
               "Title": "Pomodoro.Application.csproj",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Application\\Pomodoro.Application.csproj",
               "RelativeDocumentMoniker": "Pomodoro.Application\\Pomodoro.Application.csproj",
@@ -1856,7 +1822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 102,
               "Title": "MailKitOptions.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\AppSettingModels\\MailKitOptions.cs",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\AppSettingModels\\MailKitOptions.cs",
@@ -1868,7 +1834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 99,
               "Title": "TaskProgress.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Enums\\TaskProgress.cs",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\Enums\\TaskProgress.cs",
@@ -1880,7 +1846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 101,
               "Title": "BaseAuditableEntity.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Entities\\BaseAuditableEntity.cs",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\Entities\\BaseAuditableEntity.cs",
@@ -1892,7 +1858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 100,
               "Title": "Task.cs",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Entities\\Task.cs",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\Entities\\Task.cs",
@@ -1904,7 +1870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 103,
               "Title": "Pomodoro.Persistence.csproj",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Persistence\\Pomodoro.Persistence.csproj",
               "RelativeDocumentMoniker": "Pomodoro.Persistence\\Pomodoro.Persistence.csproj",
@@ -1916,7 +1882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 105,
               "Title": "Pomodoro.Presentation.csproj",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Presentation\\Pomodoro.Presentation.csproj",
               "RelativeDocumentMoniker": "Pomodoro.Presentation\\Pomodoro.Presentation.csproj",
@@ -1928,7 +1894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 104,
               "Title": "Pomodoro.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\Fatima\\source\\repos\\Pomodoro.Presentation\\Pomodoro.Domain\\Pomodoro.Domain.csproj",
               "RelativeDocumentMoniker": "Pomodoro.Domain\\Pomodoro.Domain.csproj",
